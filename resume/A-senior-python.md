@@ -1,6 +1,7 @@
 # Резюме А: Senior Python Developer (hh.ru)
 
-Черновик v3, 29.09.2026 (правки Павла + доработка). Под вакансии Senior/Lead Python и Sapiens Solutions.
+Опубликовано на hh 29.09.2026: https://hh.ru/resume/9e28b02aff112d3c2f0039ed1f4d62476f3469
+Файл совпадает с опубликованной версией. Под вакансии Senior/Lead Python и Sapiens Solutions.
 Поля идут в порядке формы hh.ru. Текст между линиями `---` вставляется в поле как есть.
 Проверка символов: `.venv/bin/python tools/check_resume.py`.
 
@@ -79,6 +80,7 @@ GitHub: github.com/Vilbert55
 ## Повышение квалификации, курсы
 
 - 2026. Яндекс Практикум, "Backend-разработка на Python (программа для разработчиков с опытом)".
+- 2020. Яндекс Практикум, "Python-разработчик".
 
 ## Языки
 
