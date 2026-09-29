@@ -1,0 +1,2027 @@
+{
+ "query": "greenplum",
+ "total": 283,
+ "items": [
+  {
+   "id": 135880905,
+   "name": "Архитектор DWH",
+   "company": "Банк ПСБ, ИТ",
+   "company_id": 6591,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790173568
+  },
+  {
+   "id": 137772249,
+   "name": "Инженер сопровождения информационной системы Greenplum (2L)",
+   "company": "ГК Орбита",
+   "company_id": 4623486,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790321871
+  },
+  {
+   "id": 137622620,
+   "name": "Разработчик DWH (Greenplum )",
+   "company": "Московский Кредитный Банк. ИТ-специалисты",
+   "company_id": 2492,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790058613
+  },
+  {
+   "id": 136103046,
+   "name": "Middle Data Engineer (Москва) Опыт работы с Greenplum/ hadoop/Scala",
+   "company": "ИЦ АЙ-ТЕКО",
+   "company_id": 872178,
+   "area": "Москва",
+   "compensation": {
+    "to": 200000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeTo": 200000,
+    "mode": "MONTH"
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790220139
+  },
+  {
+   "id": 136299572,
+   "name": "Дежурный администратор ArenadataDB (Greenplum)",
+   "company": "РСХБ-Интех",
+   "company_id": 3131901,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789545953
+  },
+  {
+   "id": 137357414,
+   "name": "Data Engineer / Big Data Engineer (Hadoop, Greenplum, Airflow)",
+   "company": "ИЦ АЙ-ТЕКО",
+   "company_id": 872178,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1789456633
+  },
+  {
+   "id": 137127606,
+   "name": "Главный инженер сопровождения хранилищ данных (Greenplum)",
+   "company": "РСХБ-Интех",
+   "company_id": 3131901,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788884077
+  },
+  {
+   "id": 136921403,
+   "name": "Администратор СУБД Greenplum (DBA)",
+   "company": "Альфа-Банк. ИТ-специалисты",
+   "company_id": 80,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1788418797
+  },
+  {
+   "id": 136955947,
+   "name": "Ведущий разработчик хранилища данных (Greenplum)",
+   "company": "Лига Ставок",
+   "company_id": 223129,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788435321
+  },
+  {
+   "id": 137362759,
+   "name": "Data Engineer (DWH / NRT)",
+   "company": "МФК ВЭББАНКИР",
+   "company_id": 1213725,
+   "area": "Москва",
+   "compensation": {
+    "to": 250000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeTo": 250000,
+    "mode": "MONTH",
+    "frequency": "TWICE_PER_MONTH"
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790668624
+  },
+  {
+   "id": 137900721,
+   "name": "Менеджер-Аналитик",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Самара",
+   "compensation": {
+    "from": 121350,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeFrom": 121350,
+    "mode": "MONTH"
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790669744
+  },
+  {
+   "id": 137905644,
+   "name": "Junior Data-инженер в команду Сети Продаж Сбербанка",
+   "company": "Сбер. Data Science",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790674303
+  },
+  {
+   "id": 137069216,
+   "name": "Тимлид в BI",
+   "company": "Профи.ру",
+   "company_id": 83639,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790674224
+  },
+  {
+   "id": 137611092,
+   "name": "Data Engineering Team Lead (BI Platform)",
+   "company": "Профи.ру",
+   "company_id": 83639,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790674198
+  },
+  {
+   "id": 137903076,
+   "name": "Data Engineer аналитики и отчетности г. Воронеж",
+   "company": "Сбер для экспертов",
+   "company_id": 3529,
+   "area": "Воронеж",
+   "compensation": {
+    "from": 120000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeFrom": 120000,
+    "mode": "MONTH"
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790671868
+  },
+  {
+   "id": 137903078,
+   "name": "Главный специалист аналитики и отчетности",
+   "company": "Сбер для экспертов",
+   "company_id": 3529,
+   "area": "Воронеж",
+   "compensation": {
+    "from": 90000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeFrom": 90000,
+    "mode": "MONTH"
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790671868
+  },
+  {
+   "id": 137854049,
+   "name": "SQL-разработчик",
+   "company": "IBS",
+   "company_id": 139,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790585093
+  },
+  {
+   "id": 137895426,
+   "name": "Middle Data Analyst/Data engineer (офис)",
+   "company": "ИЦ АЙ-ТЕКО",
+   "company_id": 872178,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790664943
+  },
+  {
+   "id": 136135317,
+   "name": "Data Engineer в платформенную команду",
+   "company": "Домклик",
+   "company_id": 2136954,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790597669
+  },
+  {
+   "id": 137905468,
+   "name": "Дата инженер (ученик)",
+   "company": "Aston",
+   "company_id": 6093775,
+   "area": "Москва",
+   "compensation": {
+    "from": 85000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeFrom": 85000,
+    "mode": "MONTH"
+   },
+   "experience": "noExperience",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790674095
+  },
+  {
+   "id": 137451729,
+   "name": "Главный специалист отдела сбора информации и математического моделирования",
+   "company": "РНПК",
+   "company_id": 2608647,
+   "area": "Москва",
+   "compensation": {
+    "to": 230000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeTo": 230000,
+    "mode": "MONTH",
+    "frequency": "TWICE_PER_MONTH"
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790606737
+  },
+  {
+   "id": 136856572,
+   "name": "DevOps-инженер (Big Data)",
+   "company": "Amex Development",
+   "company_id": 5724503,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790602058
+  },
+  {
+   "id": 137065916,
+   "name": "Аналитик",
+   "company": "Домклик",
+   "company_id": 2136954,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790598275
+  },
+  {
+   "id": 137871662,
+   "name": "Tech Lead MLOps",
+   "company": "МФК ВЭББАНКИР",
+   "company_id": 1213725,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790600286
+  },
+  {
+   "id": 135127329,
+   "name": "Разработчик DWH (Ярославль)",
+   "company": "Лига Цифровой Экономики",
+   "company_id": 2733062,
+   "area": "Ярославль",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "noExperience",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790604497
+  },
+  {
+   "id": 137867220,
+   "name": "Аналитик витрин данных",
+   "company": "Datanomica",
+   "company_id": 4913210,
+   "area": "Москва",
+   "compensation": {
+    "to": 200000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeTo": 200000,
+    "mode": "MONTH",
+    "frequency": "TWICE_PER_MONTH"
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790596055
+  },
+  {
+   "id": 137181738,
+   "name": "Data Engineer",
+   "company": "АРЕАЛ",
+   "company_id": 4986,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790563219
+  },
+  {
+   "id": 137869857,
+   "name": "Ведущий аналитик больших данных",
+   "company": "АНО ЦИСМ",
+   "company_id": 4563362,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790598498
+  },
+  {
+   "id": 134742112,
+   "name": "Разработчик аналитических решений",
+   "company": "X5 Tech",
+   "company_id": 9352463,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790669330
+  },
+  {
+   "id": 137859377,
+   "name": "Data-партнер (Домен Эффективность HR)",
+   "company": "БКС IT & Digital",
+   "company_id": 1833,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790588842
+  },
+  {
+   "id": 137878336,
+   "name": "Tech Lead (Lakehouse платформа)",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790608622
+  },
+  {
+   "id": 137600478,
+   "name": "Data Engineer / Spark в офисе",
+   "company": "Neoflex",
+   "company_id": 22494,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790603279
+  },
+  {
+   "id": 137867208,
+   "name": "Delivery Manager / Технический лидер DWH",
+   "company": "Neoflex",
+   "company_id": 22494,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790596039
+  },
+  {
+   "id": 137874024,
+   "name": "Аналитик / Старший аналитик DWH",
+   "company": "GlowByte",
+   "company_id": 64474,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790602751
+  },
+  {
+   "id": 137855962,
+   "name": "Middle/Middle+ Data Analyst (офис)",
+   "company": "ИЦ АЙ-ТЕКО",
+   "company_id": 872178,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790586754
+  },
+  {
+   "id": 137872005,
+   "name": "Middle Product Analyst",
+   "company": "СберЗдоровье",
+   "company_id": 1959252,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790600711
+  },
+  {
+   "id": 137854959,
+   "name": "Аналитик DWH",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790585920
+  },
+  {
+   "id": 137423006,
+   "name": "Руководитель направления анализа и обработки данных",
+   "company": "СК «Росгосстрах Жизнь»",
+   "company_id": 3700352,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790582653
+  },
+  {
+   "id": 134428231,
+   "name": "Data Engineer",
+   "company": "ТЕХНОНИКОЛЬ",
+   "company_id": 3280,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790426496
+  },
+  {
+   "id": 137872707,
+   "name": "Lead Product Analyst",
+   "company": "СберЗдоровье",
+   "company_id": 1959252,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790601382
+  },
+  {
+   "id": 136028884,
+   "name": "Senior Data scientist (Risk)",
+   "company": "Мокка",
+   "company_id": 1220357,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790674726
+  },
+  {
+   "id": 137850497,
+   "name": "Senior DBA (команда АС ЦАРС)",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790582700
+  },
+  {
+   "id": 137796275,
+   "name": "Data Engineer/Data Analyst",
+   "company": "Сбер. Data Science",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790335120
+  },
+  {
+   "id": 137832181,
+   "name": "Аналитик данных",
+   "company": "DNS Головной офис",
+   "company_id": 5920492,
+   "area": "Владивосток",
+   "compensation": {
+    "from": 165000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeFrom": 165000,
+    "mode": "MONTH",
+    "frequency": "TWICE_PER_MONTH"
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790555981
+  },
+  {
+   "id": 137750400,
+   "name": "Администратор баз данных",
+   "company": "Цифровой аудит",
+   "company_id": 11660779,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "noExperience",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790508163
+  },
+  {
+   "id": 136853871,
+   "name": "Системный аналитик middle+/senior",
+   "company": "Ойком",
+   "company_id": 2139406,
+   "area": "Воронеж",
+   "compensation": {
+    "from": 160000,
+    "to": 240000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeFrom": 160000,
+    "perModeTo": 240000,
+    "mode": "MONTH",
+    "frequency": "MONTHLY"
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790599160
+  },
+  {
+   "id": 137790863,
+   "name": "Инженер данных",
+   "company": "МАГНИТ, Розничная сеть. IT",
+   "company_id": 49357,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790328667
+  },
+  {
+   "id": 134760348,
+   "name": "Data Engineer в AI-команду",
+   "company": "Домклик",
+   "company_id": 2136954,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790428283
+  },
+  {
+   "id": 137116831,
+   "name": "Product Analyst (Buyer Experience)",
+   "company": "Циан",
+   "company_id": 1429999,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790587574
+  },
+  {
+   "id": 137795278,
+   "name": "Data Engineer (Премиальные решения)",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790334040
+  },
+  {
+   "id": 137790863,
+   "name": "Инженер данных",
+   "company": "МАГНИТ, Розничная сеть. IT",
+   "company_id": 49357,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790328667
+  },
+  {
+   "id": 137789976,
+   "name": "Дата инженер (ученик)",
+   "company": "Aston",
+   "company_id": 6093775,
+   "area": "Казань",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "noExperience",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790327634
+  },
+  {
+   "id": 137290817,
+   "name": "Главный системный аналитик КХД / Техлид",
+   "company": "БУРГЕР КИНГ РОССИЯ",
+   "company_id": 625332,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790329765
+  },
+  {
+   "id": 137772249,
+   "name": "Инженер сопровождения информационной системы Greenplum (2L)",
+   "company": "ГК Орбита",
+   "company_id": 4623486,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790321871
+  },
+  {
+   "id": 136631942,
+   "name": "Продуктовый аналитик (Финуслуги)",
+   "company": "Московская Биржа",
+   "company_id": 4307,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790325442
+  },
+  {
+   "id": 137789591,
+   "name": "Руководитель группы инженеров поддержки в Yandex Cloud",
+   "company": "Облачные, инфраструктурные сервисы и Яндекс 360 ",
+   "company_id": 1740,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790327175
+  },
+  {
+   "id": 137789562,
+   "name": "Руководитель группы инженеров поддержки в Yandex Cloud",
+   "company": "Облачные, инфраструктурные сервисы и Яндекс 360 ",
+   "company_id": 1740,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790327149
+  },
+  {
+   "id": 136808224,
+   "name": "Senior Machine Learning Engineer / RecSys",
+   "company": "Оператор Газпром ИД",
+   "company_id": 5817234,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790320331
+  },
+  {
+   "id": 137780345,
+   "name": "Senior Data / DWH аналитик",
+   "company": "Live Typing",
+   "company_id": 1929475,
+   "area": "Москва",
+   "compensation": {
+    "from": 250000,
+    "to": 310000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeFrom": 250000,
+    "perModeTo": 310000,
+    "mode": "MONTH",
+    "frequency": "TWICE_PER_MONTH"
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790317669
+  },
+  {
+   "id": 137790866,
+   "name": "Системный аналитик (Цифровой Рубль)",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790328670
+  },
+  {
+   "id": 137751177,
+   "name": "Data аналитик",
+   "company": "Страховая компания Сбербанк страхование",
+   "company_id": 1809605,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790249960
+  },
+  {
+   "id": 137762370,
+   "name": "Middle/Middle+ разработчик ETL/ELT (Антифрод)",
+   "company": "РСХБ-Интех",
+   "company_id": 3131901,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790257192
+  },
+  {
+   "id": 137741299,
+   "name": "Data Engineer",
+   "company": "IBS",
+   "company_id": 139,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790242822
+  },
+  {
+   "id": 137753098,
+   "name": "Инженер сопровождения / Специалист технической поддержки 2/3 линии",
+   "company": "GlowByte",
+   "company_id": 64474,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790252317
+  },
+  {
+   "id": 137737237,
+   "name": "Data Engineer",
+   "company": "Т-Банк. ИТ. Разработка",
+   "company_id": 78638,
+   "area": "Новосибирск",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790239036
+  },
+  {
+   "id": 137339824,
+   "name": "Аналитик данных (офис)",
+   "company": "ИЦ АЙ-ТЕКО",
+   "company_id": 872178,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790239261
+  },
+  {
+   "id": 137737655,
+   "name": "Аналитик разработчик",
+   "company": "ГКУ Инфогород",
+   "company_id": 2427329,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790239385
+  },
+  {
+   "id": 137722807,
+   "name": "Системный инженер в Yandex Cloud",
+   "company": "Облачные, инфраструктурные сервисы и Яндекс 360 ",
+   "company_id": 1740,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790224392
+  },
+  {
+   "id": 136103046,
+   "name": "Middle Data Engineer (Москва) Опыт работы с Greenplum/ hadoop/Scala",
+   "company": "ИЦ АЙ-ТЕКО",
+   "company_id": 872178,
+   "area": "Москва",
+   "compensation": {
+    "to": 200000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeTo": 200000,
+    "mode": "MONTH"
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790220139
+  },
+  {
+   "id": 133020079,
+   "name": "Data Analyst/Аналитик данных (PostgreSQL, Python)",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Омск",
+   "compensation": {
+    "from": 95000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeFrom": 95000,
+    "mode": "MONTH"
+   },
+   "experience": "noExperience",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790218790
+  },
+  {
+   "id": 137733408,
+   "name": "Ведущий специалист группы эксплуатации",
+   "company": "Спарго Технологии",
+   "company_id": 21022,
+   "area": "Воронеж",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790235370
+  },
+  {
+   "id": 136603852,
+   "name": "Аналитик DWH",
+   "company": "Decart IT-production",
+   "company_id": 1918903,
+   "area": "Москва",
+   "compensation": {
+    "from": 240000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeFrom": 240000,
+    "mode": "MONTH"
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790176522
+  },
+  {
+   "id": 136564449,
+   "name": "Data Scientist (Искусственный интеллект)",
+   "company": "РСХБ-Интех",
+   "company_id": 3131901,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790172793
+  },
+  {
+   "id": 136559976,
+   "name": "Дата-инженер",
+   "company": "Т-Банк. ИТ. Разработка",
+   "company_id": 78638,
+   "area": "Красноярск",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790167927
+  },
+  {
+   "id": 136552302,
+   "name": "Дата-инженер",
+   "company": "Т-Банк. ИТ. Разработка",
+   "company_id": 78638,
+   "area": "Саратов",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790161217
+  },
+  {
+   "id": 137110439,
+   "name": "Инженер данных",
+   "company": "Синимекс",
+   "company_id": 6944,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790164192
+  },
+  {
+   "id": 137712879,
+   "name": "Аналитик данных (Профиль)",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790171560
+  },
+  {
+   "id": 136559922,
+   "name": "Старший продуктовый аналитик в команду CVM",
+   "company": "X5 Tech",
+   "company_id": 9352463,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790167857
+  },
+  {
+   "id": 137009851,
+   "name": "Oracle/Postgre DBA/Database administrator",
+   "company": "Bell Integrator",
+   "company_id": 6189,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790161007
+  },
+  {
+   "id": 137109612,
+   "name": "Аналитик данных",
+   "company": "Синимекс",
+   "company_id": 6944,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790164166
+  },
+  {
+   "id": 137704879,
+   "name": "Руководитель направления архитектуры DWH (Антифрод)",
+   "company": "РСХБ-Интех",
+   "company_id": 3131901,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790163755
+  },
+  {
+   "id": 136584576,
+   "name": "Дата-аналитик",
+   "company": "ОТП Банк. Бизнес",
+   "company_id": 4394,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790143144
+  },
+  {
+   "id": 137703782,
+   "name": "Главный архитектор данных (Антифрод)",
+   "company": "РСХБ-Интех",
+   "company_id": 3131901,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790162549
+  },
+  {
+   "id": 137698675,
+   "name": "Middle/Senior Data Scientist (команда Лояльность)",
+   "company": "СберСпасибо",
+   "company_id": 4315301,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790157717
+  },
+  {
+   "id": 137714783,
+   "name": "Продуктовый аналитик в Департамент по работе с проблемными активам",
+   "company": "Сбер. Экспертам и руководителям",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790174543
+  },
+  {
+   "id": 137209741,
+   "name": "Руководитель группы разработки Go, платформа сверок",
+   "company": "Ozon Tech",
+   "company_id": 2180,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790152478
+  },
+  {
+   "id": 137684397,
+   "name": "Senior Data Analyst (Розничное взыскание и урегулирование)",
+   "company": "Сбер. Data Science",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790151668
+  },
+  {
+   "id": 137685781,
+   "name": "Аналитик по росту клиентской базы (сегмент «Молодежь»)",
+   "company": "Сбер для экспертов",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790152114
+  },
+  {
+   "id": 137655833,
+   "name": "Data Engineer",
+   "company": "RWB (Wildberries & Russ)",
+   "company_id": 87021,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790083620
+  },
+  {
+   "id": 137622620,
+   "name": "Разработчик DWH (Greenplum )",
+   "company": "Московский Кредитный Банк. ИТ-специалисты",
+   "company_id": 2492,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790058613
+  },
+  {
+   "id": 137661445,
+   "name": "Аналитик данных",
+   "company": "СберЗдоровье",
+   "company_id": 1959252,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790090958
+  },
+  {
+   "id": 137654591,
+   "name": "Системный аналитик DWH",
+   "company": "МАГНИТ, Розничная сеть. IT",
+   "company_id": 49357,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790082369
+  },
+  {
+   "id": 137645965,
+   "name": "Аналитик данных",
+   "company": "Сбер для экспертов",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790073990
+  },
+  {
+   "id": 137628447,
+   "name": "Python devoloper",
+   "company": "Лига Цифровой Экономики",
+   "company_id": 2733062,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790062541
+  },
+  {
+   "id": 137651451,
+   "name": "Системный аналитик (DWH)",
+   "company": "Сбер для экспертов",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790079200
+  },
+  {
+   "id": 137637494,
+   "name": "Аналитик данных (B2B / Корпоративный блок)",
+   "company": "Сбер для экспертов",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790069450
+  },
+  {
+   "id": 137631043,
+   "name": "Системный аналитик",
+   "company": "Bell Integrator",
+   "company_id": 6189,
+   "area": "Екатеринбург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790064713
+  },
+  {
+   "id": 137628798,
+   "name": "Продуктовый аналитик (Методология проведения А/Б экспериментов)",
+   "company": "Ecom.tech",
+   "company_id": 5488399,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790062798
+  },
+  {
+   "id": 137622965,
+   "name": "Team Lead Data Scientist",
+   "company": "РСХБ-Интех",
+   "company_id": 3131901,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790058974
+  },
+  {
+   "id": 137646697,
+   "name": "Ведущий инженер СРК",
+   "company": "ГКУ Инфогород",
+   "company_id": 2427329,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790074733
+  }
+ ]
+}

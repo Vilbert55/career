@@ -1,0 +1,2024 @@
+{
+ "query": "NAME:(python OR питон) AND NAME:(senior OR lead OR ведущий OR старший OR \"tech lead\" OR техлид OR тимлид)",
+ "total": 103,
+ "items": [
+  {
+   "id": 137903086,
+   "name": "Senior Python developer",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790671873
+  },
+  {
+   "id": 137896677,
+   "name": "Разработчик Python (middle+/senior)",
+   "company": "HARTUNG",
+   "company_id": 553700,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790666127
+  },
+  {
+   "id": 137857650,
+   "name": "Tech Lead Python (GigaChat)",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790588200
+  },
+  {
+   "id": 136809114,
+   "name": "Team Lead Python",
+   "company": "X5 Tech",
+   "company_id": 9352463,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790596463
+  },
+  {
+   "id": 137796644,
+   "name": "Senior Python Developer",
+   "company": "Филиал компании Лист Ренталс Лимитед",
+   "company_id": 5032843,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790594778
+  },
+  {
+   "id": 137878540,
+   "name": "Python Developer Middle+/Senior",
+   "company": "ЕДИНЫЙ ЦУПИС",
+   "company_id": 2590000,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790609161
+  },
+  {
+   "id": 137854509,
+   "name": "Senior Python Developer",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790585560
+  },
+  {
+   "id": 137852150,
+   "name": "Senior Python Developer",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790583930
+  },
+  {
+   "id": 137872367,
+   "name": "Team Lead (Python/C#)",
+   "company": "ScoutX",
+   "company_id": 12548021,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790601130
+  },
+  {
+   "id": 137216840,
+   "name": "Senior Python Developer Cybersecurity",
+   "company": "METASCAN",
+   "company_id": 3452369,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790604026
+  },
+  {
+   "id": 137878063,
+   "name": "Ведущий инженер-разработчик (Python)",
+   "company": "Positive Technologies",
+   "company_id": 26624,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790608235
+  },
+  {
+   "id": 137044794,
+   "name": "Ведущий Python разработчик",
+   "company": "ИТ-Экспертиза",
+   "company_id": 3073329,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790581221
+  },
+  {
+   "id": 137857200,
+   "name": "Senior Python разработчик (GigaChat)",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790587811
+  },
+  {
+   "id": 137876987,
+   "name": "Middle+/Senior Python Backend Developer",
+   "company": "Бонакер Александр Александрович",
+   "company_id": 11285158,
+   "area": "Москва",
+   "compensation": {
+    "from": 170000,
+    "to": 200000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeFrom": 170000,
+    "perModeTo": 200000,
+    "mode": "MONTH",
+    "frequency": "TWICE_PER_MONTH"
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790605995
+  },
+  {
+   "id": 137870734,
+   "name": "Middle+/Senior Backend разработчик (Python)",
+   "company": "Osla",
+   "company_id": 2668672,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "from": 180000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeFrom": 180000,
+    "mode": "MONTH"
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790599249
+  },
+  {
+   "id": 136005918,
+   "name": "Middle/Senior Python разработчик",
+   "company": "МедРокет",
+   "company_id": 1545815,
+   "area": "Краснодар",
+   "compensation": {
+    "from": 207000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeFrom": 207000,
+    "mode": "MONTH",
+    "frequency": "TWICE_PER_MONTH"
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790573433
+  },
+  {
+   "id": 135527583,
+   "name": "Senior Fullstack-разработчик (Python + React, Nodejs)",
+   "company": "Плавно",
+   "company_id": 4899522,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790605823
+  },
+  {
+   "id": 133150728,
+   "name": "Senior Python developer",
+   "company": "Вайт Код",
+   "company_id": 1519234,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790521780
+  },
+  {
+   "id": 137879171,
+   "name": "Senior Fullstack Web-разработчик (PHP / Node.js / Go / Python)",
+   "company": "SUPERPET",
+   "company_id": 3892344,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790611885
+  },
+  {
+   "id": 137867210,
+   "name": "Middle+/Senior Python developer в Центр DataGov",
+   "company": "\"МТС\", Работа в IT",
+   "company_id": 3776,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790596040
+  },
+  {
+   "id": 131720041,
+   "name": "Senior QA Automation Engineer (Python)",
+   "company": "UserGate",
+   "company_id": 113649,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790564624
+  },
+  {
+   "id": 137765857,
+   "name": "Python Backend Engineer Senior",
+   "company": "Копылова Татьяна Алексеевна",
+   "company_id": 9736425,
+   "area": "Краснодар",
+   "compensation": {
+    "from": 3000,
+    "to": 5000,
+    "currencyCode": "USD",
+    "gross": true,
+    "perModeFrom": 3000,
+    "perModeTo": 5000,
+    "mode": "MONTH",
+    "frequency": "MONTHLY"
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790522179
+  },
+  {
+   "id": 136962831,
+   "name": "Senior Python Backend Developer",
+   "company": "Хантфлоу",
+   "company_id": 1911705,
+   "area": "Москва",
+   "compensation": {
+    "from": 350000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeFrom": 350000,
+    "mode": "MONTH"
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790516304
+  },
+  {
+   "id": 137700563,
+   "name": "Python-разработчик (Senior/Lead)",
+   "company": "Sapiens solutions",
+   "company_id": 1789341,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790418511
+  },
+  {
+   "id": 137821661,
+   "name": "Senior python инженер (AIFA)",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790458548
+  },
+  {
+   "id": 137755802,
+   "name": "Python (Senior)",
+   "company": "Сбер2B",
+   "company_id": 3513136,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790254374
+  },
+  {
+   "id": 137792384,
+   "name": "Senior Python Backend",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790330440
+  },
+  {
+   "id": 137787120,
+   "name": "Senior python-разработчик",
+   "company": "Rambler&Co",
+   "company_id": 8620,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790324558
+  },
+  {
+   "id": 137748464,
+   "name": "Senior/Lead Python Developer",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790247152
+  },
+  {
+   "id": 137765832,
+   "name": "Senior python developer",
+   "company": "X5 Tech",
+   "company_id": 9352463,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790262851
+  },
+  {
+   "id": 137575912,
+   "name": "Tech Lead Python/Go",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1789976920
+  },
+  {
+   "id": 137747671,
+   "name": "Middle+/Senior Backend разработчик (Python)",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790246340
+  },
+  {
+   "id": 137710933,
+   "name": "IT-Lead команды (Python)",
+   "company": "Selecty",
+   "company_id": 2406247,
+   "area": "Москва",
+   "compensation": {
+    "from": 250000,
+    "to": 320000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeFrom": 250000,
+    "perModeTo": 320000,
+    "mode": "MONTH",
+    "frequency": "TWICE_PER_MONTH"
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790169649
+  },
+  {
+   "id": 136600338,
+   "name": "Senior Python-разработчик",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Самара",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790067720
+  },
+  {
+   "id": 137624377,
+   "name": "Senior Python-разработчик",
+   "company": "ДЮК Технологии",
+   "company_id": 9703218,
+   "area": "Казань",
+   "compensation": {
+    "to": 200000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeTo": 200000,
+    "mode": "MONTH",
+    "frequency": "MONTHLY"
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790060092
+  },
+  {
+   "id": 130687658,
+   "name": "Senior Python Backend-разработчик (Высоконагруженные системы, AI) Новосибирск",
+   "company": "СофтМолл",
+   "company_id": 2904511,
+   "area": "Новосибирск",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790316396
+  },
+  {
+   "id": 137497799,
+   "name": "Python Developer Tech Lead",
+   "company": "RDP.RU",
+   "company_id": 1710349,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789654682
+  },
+  {
+   "id": 137714001,
+   "name": "Senior Python разработчик (Visiology Cortex)",
+   "company": "Polymedia",
+   "company_id": 3070,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790173179
+  },
+  {
+   "id": 137660539,
+   "name": "Python Developer (Middle/Senior)",
+   "company": "Гипер",
+   "company_id": 735321,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790088684
+  },
+  {
+   "id": 137676653,
+   "name": "Middle/ Senior Python Backend Developer",
+   "company": "СберЗдоровье",
+   "company_id": 1959252,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790146972
+  },
+  {
+   "id": 134516752,
+   "name": "Разработчик Python (Middle/Senior)",
+   "company": "Нанософт",
+   "company_id": 244176,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790067467
+  },
+  {
+   "id": 137711980,
+   "name": "Senior Full-stack Developer (Python, React)",
+   "company": "Marvus Advisory",
+   "company_id": 13004668,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790170762
+  },
+  {
+   "id": 137532784,
+   "name": "AI Tech Lead / Team Lead (LLM/RAG, Python)",
+   "company": "Б1 (B1)",
+   "company_id": 4900,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789735259
+  },
+  {
+   "id": 137590283,
+   "name": "Team Lead Python Developer",
+   "company": "Capital Group",
+   "company_id": 2825,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789989136
+  },
+  {
+   "id": 137590195,
+   "name": "Senior Developer Go/Python",
+   "company": "Лаборатория Касперского",
+   "company_id": 1057,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789989029
+  },
+  {
+   "id": 137743845,
+   "name": "Senior QA Engineer (Ручное тестирование и автоматизация на Python)",
+   "company": "X5 Tech",
+   "company_id": 9352463,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790244853
+  },
+  {
+   "id": 137586184,
+   "name": "Senior AI developer (Python)",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1789985430
+  },
+  {
+   "id": 137459547,
+   "name": "Python Lead",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1789618160
+  },
+  {
+   "id": 137760519,
+   "name": "Старший инженер по автоматизации тестирования, Python, API, Ozon Bank",
+   "company": "Ozon Банк",
+   "company_id": 2180,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790256367
+  },
+  {
+   "id": 136586722,
+   "name": "Senior Automation QA Engineer (Python)/ Инженер по тестированию",
+   "company": "\"МТС\", Работа в IT",
+   "company_id": 3776,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790170214
+  },
+  {
+   "id": 137736298,
+   "name": "Старший инженер по автоматизации тестирования, Python, API, Ozon Bank",
+   "company": "Ozon Банк",
+   "company_id": 2180,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790238073
+  },
+  {
+   "id": 135927844,
+   "name": "Ведущий менеджер по моделированию и прогнозированию спроса (SQL, Python, BI)",
+   "company": "Алкогольный холдинг Руст",
+   "company_id": 364,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790246477
+  },
+  {
+   "id": 137355150,
+   "name": "Senior BI Analyst (Tableau, Python)",
+   "company": "Marfatech",
+   "company_id": 5550364,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789973495
+  },
+  {
+   "id": 137580151,
+   "name": "Senior Python Backend Developer (MWS AI)",
+   "company": "\"МТС\", Работа в IT",
+   "company_id": 3776,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789980131
+  },
+  {
+   "id": 131793092,
+   "name": "Senior Python Developer",
+   "company": "Тензор",
+   "company_id": 67611,
+   "area": "Новосибирск",
+   "compensation": {
+    "from": 300000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeFrom": 300000,
+    "mode": "MONTH"
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789655255
+  },
+  {
+   "id": 134583271,
+   "name": "Senior Python Developer",
+   "company": "Тензор",
+   "company_id": 67611,
+   "area": "Уфа",
+   "compensation": {
+    "from": 300000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeFrom": 300000,
+    "mode": "MONTH"
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789655251
+  },
+  {
+   "id": 135596729,
+   "name": "Старший инженер по автоматизированному тестированию (Python)",
+   "company": "НЭК ТЕХ",
+   "company_id": 5331533,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1789996415
+  },
+  {
+   "id": 137583469,
+   "name": "Старший Python-разработчик (TeamLead) в ОФИС",
+   "company": "Диджитал Сектор Поддержка",
+   "company_id": 1729433,
+   "area": "Краснодар",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1789982974
+  },
+  {
+   "id": 137538908,
+   "name": "Старший разработчик Python (hardware)",
+   "company": "БЮРО 1440",
+   "company_id": 5266429,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789743075
+  },
+  {
+   "id": 137356756,
+   "name": "Senior Python разработчик",
+   "company": "Ростелеком Информационные Технологии",
+   "company_id": 3144945,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789456056
+  },
+  {
+   "id": 136563839,
+   "name": "Старший инженер по автоматизации тестирования Python, ERP и учётные системы",
+   "company": "Ozon Tech",
+   "company_id": 2180,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790058153
+  },
+  {
+   "id": 135894903,
+   "name": "Ведущий Python разработчик",
+   "company": "БАЗИС",
+   "company_id": 2947917,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789460804
+  },
+  {
+   "id": 137417398,
+   "name": "Middle/Senior Python разработчик",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {}
+   ],
+   "published": 1789539883
+  },
+  {
+   "id": 137368908,
+   "name": "Senior python разработчик (SberTech)",
+   "company": "SberTech",
+   "company_id": 906557,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1789466120
+  },
+  {
+   "id": 137578299,
+   "name": "Старший Разработчик полного цикла (Python, Golang, React) [МТС Веб Сервисы]",
+   "company": "\"МТС\", Работа в IT",
+   "company_id": 3776,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789979477
+  },
+  {
+   "id": 137514644,
+   "name": "Senior Fullstack-разработчик (Python/FastAPI + AI)",
+   "company": "Заиченко Екатерина Александровна",
+   "company_id": 12458967,
+   "area": "Москва",
+   "compensation": {
+    "from": 230000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeFrom": 230000,
+    "mode": "MONTH",
+    "frequency": "TWICE_PER_MONTH"
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789715401
+  },
+  {
+   "id": 137365616,
+   "name": "Senior QA Fullstack Engineer (Python)",
+   "company": "X5 Tech",
+   "company_id": 9352463,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789463013
+  },
+  {
+   "id": 136371723,
+   "name": "Senior Backend Software Engineer (Python и Go)",
+   "company": "АИМОР",
+   "company_id": 11946171,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789652274
+  },
+  {
+   "id": 137329789,
+   "name": "Senior Python/Data Engineer — технический лидер проекта",
+   "company": "СЗЭСК",
+   "company_id": 4603981,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "from": 100000,
+    "to": 150000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeFrom": 100000,
+    "perModeTo": 150000,
+    "mode": "MONTH",
+    "frequency": "TWICE_PER_MONTH"
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789392361
+  },
+  {
+   "id": 137319254,
+   "name": "Senior Frontend developer (GO/Python)",
+   "company": "АстраЗенека",
+   "company_id": 3400,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789387511
+  },
+  {
+   "id": 137163212,
+   "name": "Senior Python Engineer",
+   "company": "ОФФСТЕЙДЖ МЕДИА",
+   "company_id": 12358668,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1788956938
+  },
+  {
+   "id": 137481726,
+   "name": "Ведущий фуллстек разработчик (Python + Vue 3)",
+   "company": "МАГНИТ, Розничная сеть. IT",
+   "company_id": 49357,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789638964
+  },
+  {
+   "id": 137126250,
+   "name": "Senior Python разработчик",
+   "company": "Литрес",
+   "company_id": 745654,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788879598
+  },
+  {
+   "id": 136230521,
+   "name": "Senior Python разработчик",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788874470
+  },
+  {
+   "id": 137118790,
+   "name": "Senior python developer",
+   "company": "Альфа-Банк. ИТ-специалисты",
+   "company_id": 80,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1788871930
+  },
+  {
+   "id": 137060004,
+   "name": "Lead Python Developer",
+   "company": "Матвеева Надежда Евгеньевна",
+   "company_id": 11331902,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1788779209
+  },
+  {
+   "id": 137205688,
+   "name": "Team Lead Python-разработки",
+   "company": "ГК Эксперт",
+   "company_id": 591938,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "from": 300000,
+    "to": 400000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeFrom": 300000,
+    "perModeTo": 400000,
+    "mode": "MONTH",
+    "frequency": "TWICE_PER_MONTH"
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789037610
+  },
+  {
+   "id": 135194717,
+   "name": "Senior Python-разработчик",
+   "company": "ЦРТ | Группа компаний",
+   "company_id": 4585,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788769218
+  },
+  {
+   "id": 137040074,
+   "name": "Senior Python Developer",
+   "company": "Reinvent Baltics",
+   "company_id": 2107134,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1788763481
+  },
+  {
+   "id": 137323217,
+   "name": "Старший инженер по разработке ПО (Python)",
+   "company": "YADRO",
+   "company_id": 1993194,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789388931
+  },
+  {
+   "id": 137464898,
+   "name": "Ведущий специалист Автоматизация и данные рыночных рисков (Python-разработчик)",
+   "company": "Банк ДОМ.РФ Другие подразделения",
+   "company_id": 3443,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789627069
+  },
+  {
+   "id": 133928605,
+   "name": "Senior Python / Go Developer",
+   "company": "Maxima.tech",
+   "company_id": 240410,
+   "area": "Казань",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788845680
+  },
+  {
+   "id": 137159532,
+   "name": "Ведущий Python Backend разработчик",
+   "company": "YADRO",
+   "company_id": 1993194,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788953604
+  },
+  {
+   "id": 136784130,
+   "name": "Tech Lead в команду сопровождения (Python / Django)",
+   "company": "X5, Медиа",
+   "company_id": 4233,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788167106
+  },
+  {
+   "id": 136962443,
+   "name": "Senior SDET (Python)",
+   "company": "Positive Technologies",
+   "company_id": 26624,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788442123
+  },
+  {
+   "id": 137097530,
+   "name": "Разработчик Fullstack Senior (Python, Vue.js)",
+   "company": "МАГНИТ, Розничная сеть. IT",
+   "company_id": 49357,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788855034
+  },
+  {
+   "id": 137072504,
+   "name": "Senior Python Developer (FastAPI, Kafka)",
+   "company": "GO Digital",
+   "company_id": 3569516,
+   "area": "Иннополис",
+   "compensation": {
+    "from": 200000,
+    "to": 350000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeFrom": 200000,
+    "perModeTo": 350000,
+    "mode": "MONTH"
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1788790556
+  },
+  {
+   "id": 137095735,
+   "name": "Senior Python-разработчик в RnD-лабораторию",
+   "company": "Корпоративный университет Сбербанка",
+   "company_id": 1388900,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788960445
+  },
+  {
+   "id": 137101704,
+   "name": "Ведущий эксперт (Middle+/Senior Python Backend Developer)",
+   "company": "СБД",
+   "company_id": 2425789,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788858392
+  },
+  {
+   "id": 137101744,
+   "name": "Руководитель группы разработки (Python Team Lead)",
+   "company": "Т-Банк. ИТ. Разработка",
+   "company_id": 78638,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {}
+   ],
+   "published": 1788858435
+  },
+  {
+   "id": 136966354,
+   "name": "Senior Python Developer (ОФИС)",
+   "company": "Selecty",
+   "company_id": 2406247,
+   "area": "Москва",
+   "compensation": {
+    "from": 300000,
+    "to": 350000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeFrom": 300000,
+    "perModeTo": 350000,
+    "mode": "MONTH",
+    "frequency": "TWICE_PER_MONTH"
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788446776
+  },
+  {
+   "id": 137175705,
+   "name": "Senior Python backend engineer (в Бильбао, Испания)",
+   "company": "Artificial Seed",
+   "company_id": 12573684,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788967783
+  },
+  {
+   "id": 136778998,
+   "name": "Senior Python Developer GameDev",
+   "company": "AYA GAMES",
+   "company_id": 11360696,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1788164044
+  },
+  {
+   "id": 136929670,
+   "name": "Senior fullstack qa инженер (python)",
+   "company": "Сбер. IT",
+   "company_id": 3529,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788425114
+  },
+  {
+   "id": 137172340,
+   "name": "Старший инженер по автоматизации тестирования Python, Ozon Travel",
+   "company": "Ozon Tech",
+   "company_id": 2180,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788965326
+  },
+  {
+   "id": 137051245,
+   "name": "Главный разработчик проекта (Java/C#, Python)",
+   "company": "Электронная торговая площадка Газпромбанка",
+   "company_id": 1111946,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788771959
+  },
+  {
+   "id": 136881121,
+   "name": "Старший разработчик сервисов данных (Python)",
+   "company": "БЮРО 1440",
+   "company_id": 5266429,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788336563
+  },
+  {
+   "id": 137213007,
+   "name": "Старший разработчик Python (Fullstack), Группа разработки ядра платформы данных, Ozon Банк",
+   "company": "Ozon Банк",
+   "company_id": 2180,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789044624
+  },
+  {
+   "id": 136933531,
+   "name": "Python Backend Developer (Middle / Senior) для финтех-платформы",
+   "company": "Кошелек Алтын",
+   "company_id": 12537242,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1788427358
+  },
+  {
+   "id": 134905752,
+   "name": "Старший разработчик Python (Fullstack), Группа разработки ядра платформы данных, Ozon Банк",
+   "company": "Ozon Банк",
+   "company_id": 2180,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788788455
+  }
+ ]
+}

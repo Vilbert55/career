@@ -1,0 +1,596 @@
+{
+ "query": "arenadata",
+ "total": 30,
+ "items": [
+  {
+   "id": 137750400,
+   "name": "Администратор баз данных",
+   "company": "Цифровой аудит",
+   "company_id": 11660779,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "noExperience",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790508163
+  },
+  {
+   "id": 137842975,
+   "name": "Data Engineer",
+   "company": "Вебпро",
+   "company_id": 12854272,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790577863
+  },
+  {
+   "id": 136535459,
+   "name": "Ведущий аналитик данных Big data (портал gosuslugi.ru)",
+   "company": "РТЛабс",
+   "company_id": 894410,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790667251
+  },
+  {
+   "id": 137859377,
+   "name": "Data-партнер (Домен Эффективность HR)",
+   "company": "БКС IT & Digital",
+   "company_id": 1833,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790588842
+  },
+  {
+   "id": 137423006,
+   "name": "Руководитель направления анализа и обработки данных",
+   "company": "СК «Росгосстрах Жизнь»",
+   "company_id": 3700352,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790582653
+  },
+  {
+   "id": 137802117,
+   "name": "Стажер разработчик SQL",
+   "company": "Банк ПСБ, Старт карьеры",
+   "company_id": 6591,
+   "area": "Ярославль",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "noExperience",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790340384
+  },
+  {
+   "id": 137782547,
+   "name": "Главный специалист по регламентации бизнес-процессов (интегратор)",
+   "company": "ГБУ «Московский городской трест геолого-геодезических и картографических работ» (ГБУ «Мосгоргеотрест»)",
+   "company_id": 127870,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790319906
+  },
+  {
+   "id": 137734655,
+   "name": "Junior DevOps",
+   "company": "АШАН Ритейл Россия, Работа в IT",
+   "company_id": 54979,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790236485
+  },
+  {
+   "id": 137701677,
+   "name": "Аналитик данных",
+   "company": "СК «Росгосстрах Жизнь»",
+   "company_id": 3700352,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790168639
+  },
+  {
+   "id": 137597390,
+   "name": "DevOps",
+   "company": "Аренадата Софтвер",
+   "company_id": 4813742,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789994861
+  },
+  {
+   "id": 136829543,
+   "name": "Аналитик DWH/Аналитик данных",
+   "company": "WMT",
+   "company_id": 4334427,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789988820
+  },
+  {
+   "id": 137584861,
+   "name": "Инженер сопровождения платформы данных (Hadoop)",
+   "company": "Национальная система платежных карт",
+   "company_id": 1654251,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789984112
+  },
+  {
+   "id": 136481174,
+   "name": "Developer Advocate (ADB)",
+   "company": "Аренадата Софтвер",
+   "company_id": 4813742,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789891448
+  },
+  {
+   "id": 136414702,
+   "name": "Team Lead Java (Big Data, Hadoop)",
+   "company": "Аренадата Софтвер",
+   "company_id": 4813742,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789737220
+  },
+  {
+   "id": 137485130,
+   "name": "Auto QA Python (Hadoop, Spark)",
+   "company": "Аренадата Софтвер",
+   "company_id": 4813742,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789642188
+  },
+  {
+   "id": 137492691,
+   "name": "Senior Developer Bundle (Arenadata Hyperwave)",
+   "company": "Аренадата Софтвер",
+   "company_id": 4813742,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789648424
+  },
+  {
+   "id": 137424901,
+   "name": "Аналитик DG/DQ (в Банк)",
+   "company": "Сателл ИТ",
+   "company_id": 2863237,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789631077
+  },
+  {
+   "id": 137449398,
+   "name": "Аналитик-разработчик DWH (middle)",
+   "company": "БКС IT & Digital",
+   "company_id": 1833,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789569086
+  },
+  {
+   "id": 137329762,
+   "name": "Младший администратор СУБД ArenaData",
+   "company": "Т1 Сервионика",
+   "company_id": 4649269,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789392332
+  },
+  {
+   "id": 137311182,
+   "name": "DevOps-инженер",
+   "company": "Industry Soft Solutions",
+   "company_id": 12371499,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789380939
+  },
+  {
+   "id": 136185339,
+   "name": "DWH Инженер (DevOps)",
+   "company": "БАНК ИНТЕЗА",
+   "company_id": 589,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789135050
+  },
+  {
+   "id": 137171801,
+   "name": "Аналитик данных / Data Governance & Data Quality",
+   "company": "Лига Цифровой Экономики",
+   "company_id": 2733062,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1788964694
+  },
+  {
+   "id": 137127606,
+   "name": "Главный инженер сопровождения хранилищ данных (Greenplum)",
+   "company": "РСХБ-Интех",
+   "company_id": 3131901,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788884077
+  },
+  {
+   "id": 137002371,
+   "name": "Ведущий системный администратор",
+   "company": "Московский филиал АО ЦентрИнформ",
+   "company_id": 703850,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788526967
+  },
+  {
+   "id": 137003404,
+   "name": "Дежурный системный администратор",
+   "company": "Московский филиал АО ЦентрИнформ",
+   "company_id": 703850,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788528074
+  },
+  {
+   "id": 134519922,
+   "name": "Разработчик корпоративного хранилища данных",
+   "company": "Зарубежнефть",
+   "company_id": 247679,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788351141
+  },
+  {
+   "id": 136358881,
+   "name": "Системный Аналитик",
+   "company": "Зарубежнефть",
+   "company_id": 247679,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788351131
+  },
+  {
+   "id": 135989095,
+   "name": "Руководитель направления качества данных",
+   "company": "Государственная транспортная лизинговая компания",
+   "company_id": 185862,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788360899
+  },
+  {
+   "id": 136855586,
+   "name": "Методолог Data Governance",
+   "company": "Diasoft",
+   "company_id": 154,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788268187
+  },
+  {
+   "id": 136828902,
+   "name": "Архитектор DWH",
+   "company": "РСХБ-Интех",
+   "company_id": 3131901,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788249721
+  }
+ ]
+}

@@ -1,0 +1,832 @@
+{
+ "query": "NAME:(архитектор OR architect) AND (DWH OR \"платформ данных\" OR \"data platform\" OR \"архитектор данных\" OR \"data architect\" OR \"big data\" OR greenplum)",
+ "total": 41,
+ "items": [
+  {
+   "id": 135880905,
+   "name": "Архитектор DWH",
+   "company": "Банк ПСБ, ИТ",
+   "company_id": 6591,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790173568
+  },
+  {
+   "id": 137289484,
+   "name": "Solution Architect",
+   "company": "Клируэй Текнолоджис",
+   "company_id": 1137609,
+   "area": "Москва",
+   "compensation": {
+    "from": 350000,
+    "to": 450000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeFrom": 350000,
+    "perModeTo": 450000,
+    "mode": "MONTH"
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790661918
+  },
+  {
+   "id": 136808768,
+   "name": "Системный аналитик / Архитектор данных (МГТС)",
+   "company": "\"МТС\", Работа в IT",
+   "company_id": 3776,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790576377
+  },
+  {
+   "id": 137904928,
+   "name": "Архитектор Optimacros",
+   "company": "Бэнкс Софт Системс",
+   "company_id": 2575,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790673599
+  },
+  {
+   "id": 137857987,
+   "name": "Архитектор solution (AI)",
+   "company": "WMT",
+   "company_id": 4334427,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790588435
+  },
+  {
+   "id": 137703782,
+   "name": "Главный архитектор данных (Антифрод)",
+   "company": "РСХБ-Интех",
+   "company_id": 3131901,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790162549
+  },
+  {
+   "id": 136413611,
+   "name": "Главный архитектор (Chief Architect)",
+   "company": "СИНЕРГИЯ",
+   "company_id": 127256,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790509034
+  },
+  {
+   "id": 137735386,
+   "name": "Ведущий архитектор BI и платформы данных / BI & Data Platform Architect",
+   "company": "S3",
+   "company_id": 3914,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790237277
+  },
+  {
+   "id": 137534972,
+   "name": "Архитектор данных",
+   "company": "Калашников. Вакансии для специалистов и руководителей",
+   "company_id": 981,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1789738287
+  },
+  {
+   "id": 137808086,
+   "name": "Архитектор Хранилищ Данных (DWH)",
+   "company": "ИТС",
+   "company_id": 4348791,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790348482
+  },
+  {
+   "id": 137585146,
+   "name": "Архитектор DWH",
+   "company": "ВАЗСИСТЕМ",
+   "company_id": 2377577,
+   "area": "Тольятти",
+   "compensation": {
+    "from": 270000,
+    "to": 300000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeFrom": 270000,
+    "perModeTo": 300000,
+    "mode": "MONTH"
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789984401
+  },
+  {
+   "id": 137786689,
+   "name": "Архитектор AI",
+   "company": "ИК СИБИНТЕК",
+   "company_id": 197135,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790324185
+  },
+  {
+   "id": 137785372,
+   "name": "Solution Architect / Архитектор решений (маркетинг)",
+   "company": "ВсеИнструменты.ру",
+   "company_id": 208707,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1790322799
+  },
+  {
+   "id": 137764692,
+   "name": "Корпоративный архитектор",
+   "company": "Интерлизинг",
+   "company_id": 67408,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790260128
+  },
+  {
+   "id": 136697637,
+   "name": "Архитектор решений по цифровизации блока добычи",
+   "company": "НОВАТЭК",
+   "company_id": 1808,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790428322
+  },
+  {
+   "id": 136073877,
+   "name": "Архитектор данных",
+   "company": "Государственная транспортная лизинговая компания",
+   "company_id": 185862,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788789467
+  },
+  {
+   "id": 136623973,
+   "name": "Архитектор ИТ-инфраструктуры",
+   "company": "Ростелеком",
+   "company_id": 2748,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790188812
+  },
+  {
+   "id": 136786948,
+   "name": "Архитектор данных",
+   "company": "Федеральное автономное учреждение «Национальный институт аккредитации» (ФАУ НИА)",
+   "company_id": 2580687,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788169518
+  },
+  {
+   "id": 134941723,
+   "name": "Архитектор данных НСИ",
+   "company": "ЛУКОЙЛ",
+   "company_id": 907345,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788349388
+  },
+  {
+   "id": 137457211,
+   "name": "Архитектор хранилища данных",
+   "company": "IT_One",
+   "company_id": 5050306,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789608763
+  },
+  {
+   "id": 137055333,
+   "name": "Архитектор решений ML (Цифровые помощники)",
+   "company": "Т1 ИИ",
+   "company_id": 4649269,
+   "area": "Иннополис",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1790146091
+  },
+  {
+   "id": 137535339,
+   "name": "Бизнес архитектор",
+   "company": "Калашников. Вакансии для специалистов и руководителей",
+   "company_id": 981,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1789738906
+  },
+  {
+   "id": 137330485,
+   "name": "Архитектор DWH/ Tech Lead",
+   "company": "Wanted",
+   "company_id": 5174849,
+   "area": "Москва",
+   "compensation": {
+    "to": 450000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeTo": 450000,
+    "mode": "MONTH"
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789393099
+  },
+  {
+   "id": 136654259,
+   "name": "Руководитель Opti-команды / EPM-архитектор (Optimacros)",
+   "company": "Alta Personnel",
+   "company_id": 132302,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790082559
+  },
+  {
+   "id": 137452844,
+   "name": "Корпоративный архитектор",
+   "company": "Группа компаний Агротек",
+   "company_id": 2136586,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789572085
+  },
+  {
+   "id": 134725501,
+   "name": "Главный корпоративный архитектор по ИТ-инфраструктуре",
+   "company": "Лоция",
+   "company_id": 5860936,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1790007526
+  },
+  {
+   "id": 136828902,
+   "name": "Архитектор DWH",
+   "company": "РСХБ-Интех",
+   "company_id": 3131901,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788249721
+  },
+  {
+   "id": 137219327,
+   "name": "Solution Architect / AI Architect",
+   "company": "Нетбелл",
+   "company_id": 1929231,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789050698
+  },
+  {
+   "id": 137507642,
+   "name": "Корпоративный архитектор ERP-систем",
+   "company": "АЛРОСА.ИТ",
+   "company_id": 92288,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1789705757
+  },
+  {
+   "id": 133215976,
+   "name": "Системный архитектор",
+   "company": "Просвещение",
+   "company_id": 536,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788982616
+  },
+  {
+   "id": 134271433,
+   "name": "Архитектор ИТ-решений (Solution Architect) (внутренние продукты)",
+   "company": "Группа компаний Астра",
+   "company_id": 5060211,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between1And3",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789273651
+  },
+  {
+   "id": 137235436,
+   "name": "AI / Automation Solution Architect - архитектор корпоративной автоматизации",
+   "company": "Мустанг Технологии Кормления",
+   "company_id": 27281,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1789110996
+  },
+  {
+   "id": 136178742,
+   "name": "Solution architect (AI transformation)",
+   "company": "Мокка",
+   "company_id": 1220357,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788774102
+  },
+  {
+   "id": 134901204,
+   "name": "AI Solutions Architect (LLM)",
+   "company": "YADRO",
+   "company_id": 1993194,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1788528914
+  },
+  {
+   "id": 136955781,
+   "name": "Архитектор ИТ решений",
+   "company": "ИТ-специалисты",
+   "company_id": 44272,
+   "area": "Санкт-Петербург",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788435142
+  },
+  {
+   "id": 136937792,
+   "name": "Архитектор кхд / Аналитик",
+   "company": "Технохранилище",
+   "company_id": 11787991,
+   "area": "Москва",
+   "compensation": {
+    "from": 280000,
+    "to": 400000,
+    "currencyCode": "RUR",
+    "gross": true,
+    "perModeFrom": 280000,
+    "perModeTo": 400000,
+    "mode": "MONTH"
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE"
+     ]
+    }
+   ],
+   "published": 1788428706
+  },
+  {
+   "id": 136885905,
+   "name": "Архитектор ИТ решений",
+   "company": "ИТ-специалисты",
+   "company_id": 44272,
+   "area": "Пермь",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788340686
+  },
+  {
+   "id": 136811472,
+   "name": "Системный архитектор (AI)",
+   "company": "Selecty",
+   "company_id": 2406247,
+   "area": "Москва",
+   "compensation": {
+    "from": 400000,
+    "to": 450000,
+    "currencyCode": "RUR",
+    "gross": false,
+    "perModeFrom": 400000,
+    "perModeTo": 450000,
+    "mode": "MONTH"
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "REMOTE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788192434
+  },
+  {
+   "id": 135663646,
+   "name": "Архитектор по ИТ-инфраструктуре (Object Storage\\ИИ)",
+   "company": "ГНИВЦ",
+   "company_id": 160748,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE",
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1789039895
+  },
+  {
+   "id": 137038170,
+   "name": "Эксперт Отдела корпоративных данных (Архитектор КХД)",
+   "company": "НОВАТЭК",
+   "company_id": 1808,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "moreThan6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "ON_SITE"
+     ]
+    }
+   ],
+   "published": 1788762270
+  },
+  {
+   "id": 136924835,
+   "name": "AI-инженер / Архитектор платформы",
+   "company": "Восточная горнорудная компания",
+   "company_id": 240334,
+   "area": "Москва",
+   "compensation": {
+    "noCompensation": {}
+   },
+   "experience": "between3And6",
+   "work_formats": [
+    {
+     "workFormatsElement": [
+      "HYBRID"
+     ]
+    }
+   ],
+   "published": 1788421305
+  }
+ ]
+}
