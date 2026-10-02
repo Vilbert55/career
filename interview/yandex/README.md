@@ -90,6 +90,8 @@ Python-задач с этой секции в открытом доступе н
 
    Расширения Copilot в VS Code не установлены (проверено 02.10.2026, VS Code 1.135).
    Claude Code во время секции закрыть.
+   Линтер: `pip install ruff` в venv + расширение VS Code `charliermarsh.ruff` (поставлено 02.10.2026),
+   в settings.json - `"ruff.importStrategy": "fromEnvironment"`.
 4. Проверить, что `pytest` запускается из терминала и из панели Testing.
 5. Перед секцией: демонстрация экрана и камера в Zoom и Телемосте, крупный шрифт.
 
