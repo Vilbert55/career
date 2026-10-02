@@ -34,13 +34,27 @@
   секция про опыт (STAR, проект не старше 2-3 лет), финалы с командами.
   Опыт кандидата из статьи 1006022: senior не дали из-за "недостаточно сложного" проекта на секции опыта.
 
-## Окружение (сделать до понедельника)
+## Окружение (Павел поднимает сам для каждой задачи и перед понедельником)
 
-- Пустой проект, venv на Python 3.10+, pytest; при желании pytest-asyncio.
-- Отключить ИИ в IDE: в PyCharm - Plugins, Local AI/ML Tools - Disable All, сторонние плагины,
-  файл `.noai` в корне проекта, Full Line Code Completion выключить. В VS Code - Copilot
-  и inline suggestions. Claude Code во время секции закрыть.
-- Проверить демонстрацию экрана и камеру в Zoom и Телемосте; крупный шрифт в IDE.
+1. Открыть папку проекта в VS Code: `code <папка>`.
+2. venv: `python3 -m venv .venv`, `.venv/bin/pip install pytest` (для async - `pytest-asyncio`),
+   выбрать интерпретатор `.venv` в VS Code (Python: Select Interpreter).
+3. ИИ выключить - `.vscode/settings.json` проекта:
+
+   ```json
+   {
+       "chat.disableAIFeatures": true,
+       "github.copilot.enable": {"*": false},
+       "editor.inlineSuggest.enabled": false,
+       "python.testing.pytestEnabled": true,
+       "editor.fontSize": 16
+   }
+   ```
+
+   Расширения Copilot в VS Code не установлены (проверено 02.10.2026, VS Code 1.135).
+   Claude Code во время секции закрыть.
+4. Проверить, что `pytest` запускается из терминала и из панели Testing.
+5. Перед секцией: демонстрация экрана и камера в Zoom и Телемосте, крупный шрифт.
 
 ## Поправка к записи в PROGRESS от 01.10.2026
 
