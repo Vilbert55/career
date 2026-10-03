@@ -1,7 +1,5 @@
 # dataclasses: памятка
 
-Оригинал (Claude Docs, можно выгрузить в PDF): https://claude.ai/code/artifact/db4471b7-7c82-4229-a2af-03a9e675c8e2
-
 Стандартная библиотека, Python 3.10+.
 
 ## Объявление

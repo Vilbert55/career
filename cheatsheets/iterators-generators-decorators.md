@@ -1,7 +1,5 @@
 # Итераторы, генераторы, декораторы: памятка
 
-Оригинал (Claude Docs, можно выгрузить в PDF): https://claude.ai/code/artifact/3a2cb4d8-1622-4870-b12b-aecce3bb1f14
-
 Python 3.10+.
 
 ## Итератор

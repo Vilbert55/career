@@ -1,6 +1,15 @@
-"""Рабочие примеры приемов pytest. Копировать нужный кусок и менять под свой код."""
+"""Примеры приемов pytest и заготовка под свой код. Копировать нужный кусок и менять.
+
+Фикстуры из conftest.py (clock, service, make_promo) видны всем тестам в папке - импортировать их не нужно,
+pytest подставляет фикстуру по имени аргумента.
+
+Чек-лист случаев: основной сценарий; границы (0, 1, пусто, ровно на лимите, +-1);
+некорректный вход (какое исключение); деньги и округление; состояние (повтор, порядок,
+неудачная операция ничего не меняет); несколько пользователей; время через часы.
+"""
 import json
 import logging
+import sqlite3
 from datetime import datetime
 from decimal import Decimal
 from unittest.mock import AsyncMock, Mock, patch
@@ -10,10 +19,39 @@ import pytest
 import example
 from example import PromoError, PromoExpired, PromoNotFound, fetch_all, percent_discount
 
+# --- 0. Заготовка под свой код: раскомментировать и заполнить -------------------
+#
+# from my_module import MyService, MyError
+#
+#
+# @pytest.fixture
+# def svc(clock):
+#     return MyService(clock=clock)
+#
+#
+# def test_happy_path(svc):
+#     assert svc.do(...) == ...
+#
+#
+# @pytest.mark.parametrize(("value", "expected"), [(..., ...), (..., ...)])
+# def test_boundaries(svc, value, expected):
+#     assert svc.do(value) == expected
+#
+#
+# def test_invalid_input_raises(svc):
+#     with pytest.raises(MyError, match="..."):
+#         svc.do(...)
+#
+#
+# def test_failed_operation_changes_nothing(svc):
+#     before = svc.state()
+#     with pytest.raises(MyError):
+#         svc.do(...)
+#     assert svc.state() == before
 
 # --- 1. Простая проверка и исключения -------------------------------------
 
-def test_quote_applies_discount(service, make_promo):
+def test_quote_applies_discount(service, make_promo):     # фикстуры из conftest.py, без импорта
     service.add(make_promo())
     assert service.quote("AUTUMN20", Decimal("500")) == Decimal("400.00")
 
@@ -40,7 +78,55 @@ def test_float_needs_approx():
     assert 0.1 + 0.2 == pytest.approx(0.3)
 
 
-# --- 2. Параметризация ------------------------------------------------------
+# --- 2. Свои фикстуры: yield с уборкой, scope, params --------------------------
+
+@pytest.fixture
+def db():
+    conn = sqlite3.connect(":memory:")
+    conn.execute("create table used (code text, user_id int)")
+    yield conn                # до yield - подготовка, тест получает conn
+    conn.close()              # после yield - уборка, выполнится и после упавшего теста
+
+
+def test_yield_fixture(db):
+    db.execute("insert into used values ('AUTUMN20', 7)")
+    assert db.execute("select count(*) from used").fetchone() == (1,)
+
+
+@pytest.fixture(scope="module")
+def heavy_config():
+    # одна на все тесты файла; scope: function (по умолчанию), class, module, session
+    return {"limit": 3}
+
+
+def test_scope_module(heavy_config):
+    assert heavy_config["limit"] == 3
+
+
+@pytest.fixture(params=[dict, lambda: {"preset": 1}], ids=["empty", "preset"])
+def storage(request):
+    return request.param()    # тест ниже выполнится для каждого params
+
+
+def test_runs_for_each_storage(storage):
+    storage["x"] = 1
+    assert storage["x"] == 1
+
+
+@pytest.fixture
+async def async_client():
+    client = AsyncMock()
+    yield client              # async-фикстура с уборкой
+    await client.aclose()
+
+
+async def test_async_yield_fixture(async_client):
+    await async_client.get("a")
+    async_client.get.assert_awaited_once_with("a")
+
+
+
+# --- 3. Параметризация ------------------------------------------------------
 
 @pytest.mark.parametrize(
     ("price", "percent", "cap", "expected"),
@@ -73,7 +159,7 @@ def test_param_with_marks(raw, expected):
     assert int(raw) == expected
 
 
-# --- 3. Время через внедренные часы ------------------------------------------
+# --- 4. Время через внедренные часы ------------------------------------------
 
 def test_valid_until_is_inclusive(service, make_promo, clock):
     clock.now = datetime(2026, 10, 31, 23, 59)
@@ -84,7 +170,7 @@ def test_valid_until_is_inclusive(service, make_promo, clock):
         service.quote("AUTUMN20", Decimal("100"))
 
 
-# --- 4. Mock: проверить, как вызвали зависимость ------------------------------
+# --- 5. Mock: проверить, как вызвали зависимость ------------------------------
 
 def test_redeem_notifies_user(clock, make_promo):
     notifier = Mock()
@@ -111,7 +197,7 @@ def test_side_effect_sequence():
     assert api.get_rate.call_count == 2
 
 
-# --- 5. monkeypatch и patch: подменить то, что зашито в код -------------------
+# --- 6. monkeypatch и patch: подменить то, что зашито в код -------------------
 
 def test_monkeypatch_function(monkeypatch):
     monkeypatch.setattr(example, "percent_discount", lambda price, percent, cap=None: Decimal("1"))
@@ -132,7 +218,7 @@ def test_patch_context():
     fake.assert_called_once()
 
 
-# --- 6. Async ----------------------------------------------------------------
+# --- 7. Async ----------------------------------------------------------------
 
 async def test_fetch_all_async():
     client = AsyncMock()
@@ -141,7 +227,7 @@ async def test_fetch_all_async():
     assert client.get.await_count == 2
 
 
-# --- 7. Вывод, логи, файлы -----------------------------------------------------
+# --- 8. Вывод, логи, файлы -----------------------------------------------------
 
 def test_capsys(capsys):
     print("готово")
@@ -158,26 +244,3 @@ def test_tmp_path(tmp_path):
     path = tmp_path / "promos.json"
     path.write_text(json.dumps({"code": "A"}), encoding="utf-8")
     assert json.loads(path.read_text(encoding="utf-8")) == {"code": "A"}
-
-
-# --- 8. Фикстура с уборкой и параметризованная фикстура -------------------------
-
-@pytest.fixture
-def resource():
-    log = ["open"]
-    yield log
-    log.append("close")       # выполнится и после упавшего теста
-
-
-def test_yield_fixture(resource):
-    assert resource == ["open"]
-
-
-@pytest.fixture(params=[dict, lambda: {"preset": 1}], ids=["empty", "preset"])
-def storage(request):
-    return request.param()
-
-
-def test_runs_for_each_storage(storage):
-    storage["x"] = 1
-    assert storage["x"] == 1

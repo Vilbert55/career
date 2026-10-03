@@ -1,7 +1,5 @@
 # pytest: памятка
 
-Оригинал (Claude Docs, можно выгрузить в PDF): https://claude.ai/code/artifact/d1e73bbd-70ff-49df-89ee-bd115d73a36a
-
 pytest 8+, Python 3.10+. Каркас проекта - `cheatsheets/pytest-template/`.
 
 ## Запуск
@@ -111,6 +109,7 @@ def storage(request):                       # тесты пройдут на к�
 | `request` | `request.param` в параметризованной фикстуре |
 
 `scope`: `function` (по умолчанию), `class`, `module`, `session`.
+Фикстура подставляется по имени аргумента; из `conftest.py` - без импорта.
 
 ## Время и зависимости
 

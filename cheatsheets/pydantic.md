@@ -1,7 +1,5 @@
 # Pydantic v2: памятка
 
-Оригинал (Claude Docs, можно выгрузить в PDF): https://claude.ai/code/artifact/4d0bac19-c231-4d3b-8d23-5ed0460252d5
-
 Pydantic 2.x, Python 3.10+.
 
 ## Модель
