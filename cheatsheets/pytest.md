@@ -1,6 +1,6 @@
 # pytest: памятка
 
-pytest 8+, Python 3.10+. Каркас проекта - `cheatsheets/pytest-template/`.
+pytest 8+, Python 3.10+. Пример проекта - `cheatsheets/pytest-example/`.
 
 ## Запуск
 

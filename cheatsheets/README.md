@@ -8,4 +8,4 @@
 | [dataclasses.md](dataclasses.md) | dataclasses: поля, параметры, field(), __post_init__, наследование, отличия от pydantic |
 | [iterators-generators-decorators.md](iterators-generators-decorators.md) | итераторы, генераторы, itertools, contextmanager, декораторы, частые вопросы |
 | [pytest.md](pytest.md) | pytest: запуск, проверки, parametrize, фикстуры, monkeypatch и mock, async, чек-лист тестов |
-| [pytest-template/](pytest-template/) | каркас проекта: pytest.ini, VS Code без ИИ, conftest с часами и фабрикой, примеры тестов и заготовка в одном файле |
+| [pytest-example/](pytest-example/) | пример проекта: код, фикстуры в conftest.py, тесты; pytest.ini, VS Code без ИИ |
