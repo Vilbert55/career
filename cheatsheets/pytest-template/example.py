@@ -1,4 +1,4 @@
-"""Пример кода под тесты. На секции заменить своим."""
+"""Пример кода под тесты. Заменить своим."""
 from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import datetime
