@@ -29,6 +29,58 @@ add(2, 3)          # 5
 add.__name__       # 'add' (без wraps было бы 'wrapper')
 ```
 
+## functools.wraps
+
+Без `wraps` декоратор работает, но обертка подменяет "паспорт" функции: в логах и трейсбеках имя `wrapper`,
+`help()` без docstring, `inspect.signature` показывает `(*args, **kwargs)`. FastAPI и pytest читают сигнатуру,
+чтобы подставить параметры и фикстуры, и без `wraps` ломаются. Ниже два одинаковых декоратора: с `wraps` и вручную.
+
+```python
+import functools
+import inspect
+
+
+def with_wraps(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        return func(*args, **kwargs)
+    return wrapper
+
+
+def by_hand(func):                                  # то же самое без wraps
+    def wrapper(*args, **kwargs):
+        return func(*args, **kwargs)
+    wrapper.__module__ = func.__module__
+    wrapper.__name__ = func.__name__
+    wrapper.__qualname__ = func.__qualname__
+    wrapper.__doc__ = func.__doc__
+    wrapper.__dict__.update(func.__dict__)
+    wrapper.__wrapped__ = func                      # ссылка на оригинал: по ней inspect берет сигнатуру
+    return wrapper
+
+
+def bare(func):                                     # без копирования - для сравнения
+    def wrapper(*args, **kwargs):
+        return func(*args, **kwargs)
+    return wrapper
+
+
+def add(a: int, b: int) -> int:
+    """Сложить два числа."""
+    return a + b
+
+
+f1, f2, f3 = with_wraps(add), by_hand(add), bare(add)
+f1.__name__, f2.__name__, f3.__name__               # ('add', 'add', 'wrapper')
+f1.__doc__ == f2.__doc__ == add.__doc__             # True; у f3 - None
+str(inspect.signature(f1)) == str(inspect.signature(f2)) == "(a: int, b: int) -> int"   # True
+str(inspect.signature(f3))                          # '(*args, **kwargs)'
+f1.__wrapped__ is f2.__wrapped__ is add             # True: оригинал без декоратора, удобно в тестах
+```
+
+`wraps` еще копирует аннотации и `__type_params__`, полный список - `functools.WRAPPER_ASSIGNMENTS`.
+Для декоратора-класса то же делает `functools.update_wrapper(self, func)`.
+
 ## Таймер и лог вызовов
 
 ```python
