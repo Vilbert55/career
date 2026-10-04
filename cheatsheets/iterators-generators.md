@@ -1,4 +1,4 @@
-# Итераторы, генераторы, декораторы: памятка
+# Итераторы и генераторы: памятка
 
 Python 3.10+.
 
@@ -143,78 +143,6 @@ g.send(10)                              # 10.0
 g.send(20)                              # 15.0
 ```
 
-## Декоратор
-
-`@deco` над `def f` - то же, что `f = deco(f)`. Выполняется один раз при объявлении, обертка - на каждом вызове.
-
-```python
-import functools
-
-
-def timed(func):
-    @functools.wraps(func)                  # имя, docstring, __wrapped__
-    def wrapper(*args, **kwargs):
-        start = time.perf_counter()
-        try:
-            return func(*args, **kwargs)    # не забыть return
-        finally:
-            print(f"{func.__name__}: {time.perf_counter() - start:.3f} с")
-    return wrapper
-
-
-def make_counter():                         # замыкание
-    count = 0
-
-    def inc():
-        nonlocal count                      # без nonlocal - UnboundLocalError
-        count += 1
-        return count
-
-    return inc
-```
-
-Частые ошибки: нет `return` в обертке (всегда None); нет `wraps` (имя `wrapper`); `wrapper()` без `*args, **kwargs`.
-Для `async def` обертка тоже `async def` и `return await func(...)`.
-
-## Декоратор с параметрами
-
-```python
-def retry(times: int = 3, exceptions=(ConnectionError,)):
-    def decorator(func):
-        @functools.wraps(func)
-        def wrapper(*args, **kwargs):
-            for attempt in range(1, times + 1):
-                try:
-                    return func(*args, **kwargs)
-                except exceptions:
-                    if attempt == times:
-                        raise               # пробросить с исходным traceback
-        return wrapper
-    return decorator
-
-
-@retry(times=5, exceptions=(TimeoutError,))     # @retry без скобок - ошибка
-def fetch_tariff(zone): ...
-```
-
-- Порядок: `@a @b def f` = `a(b(f))`; при вызове сначала код `a`.
-- Состояние - в замыкании (`cache = {}` внутри декоратора) или в классе с `__call__` + `functools.update_wrapper(self, func)`.
-- Декоратор-класс на методе не получит `self`; для методов - декоратор-функция.
-
-## Встроенные декораторы
-
-| Декоратор | Что делает |
-| --- | --- |
-| `@functools.cache`, `@lru_cache(maxsize=128)` | кэш по хешируемым аргументам; `cache_clear()`, `cache_info()` |
-| `@property`, `@x.setter` | метод как атрибут |
-| `@functools.cached_property` | считается один раз на объект |
-| `@staticmethod` | без `self` и `cls` |
-| `@classmethod` | первый аргумент - класс; `from_dict(cls, d)` |
-| `@abstractmethod` | обязателен к переопределению |
-| `@contextmanager` | контекстный менеджер из генератора |
-
-`lru_cache` на методе держит `self` в кэше - объекты не освобождаются.
-
 ## Коротко
 
 | Что | Ответ |
@@ -222,5 +150,5 @@ def fetch_tariff(zone): ...
 | итерируемый vs итератор | у итератора еще `__next__` и состояние, он одноразовый |
 | генератор vs список | ленивый, хранит только состояние, без `len` и индексов |
 | `yield` vs `return` | `yield` ставит функцию на паузу, `return` завершает |
-| `[f() for f in [lambda: i for i in range(3)]]` | `[2, 2, 2]` - позднее связывание; `lambda i=i: i` |
-| декоратор класса | принимает и возвращает класс, как `@dataclass` |
+
+Декораторы - [decorators.md](decorators.md).
