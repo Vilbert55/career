@@ -4,7 +4,7 @@ Python 3.11+. Каждый блок самостоятельный, можно �
 `@deco` над `def f` - то же, что `f = deco(f)`: декоратор выполняется один раз при объявлении функции,
 обертка - на каждом вызове.
 
-## Шаблон
+## Шаблон декоратора
 
 ```python
 import functools
@@ -29,7 +29,7 @@ add(2, 3)          # 5
 add.__name__       # 'add' (без wraps было бы 'wrapper')
 ```
 
-## functools.wraps
+## Зачем functools.wraps
 
 Без `wraps` декоратор работает, но обертка подменяет "паспорт" функции: в логах и трейсбеках имя `wrapper`,
 `help()` без docstring, `inspect.signature` показывает `(*args, **kwargs)`. FastAPI и pytest читают сигнатуру,
@@ -81,7 +81,7 @@ f1.__wrapped__ is f2.__wrapped__ is add             # True: оригинал б�
 `wraps` еще копирует аннотации и `__type_params__`, полный список - `functools.WRAPPER_ASSIGNMENTS`.
 Для декоратора-класса то же делает `functools.update_wrapper(self, func)`.
 
-## Таймер и лог вызовов
+## Примеры: замер времени и лог вызовов
 
 ```python
 import functools
@@ -116,7 +116,7 @@ def log_calls(func):
     return wrapper
 ```
 
-## С параметрами: retry
+## Декоратор с аргументами: @retry(times=5)
 
 ```python
 import functools
@@ -143,7 +143,10 @@ def fetch_tariff(zone: str) -> int:
     return 100
 ```
 
-## Можно и со скобками, и без
+## Аргументы необязательны: и @trace, и @trace(prefix="--")
+
+`@trace` без скобок: Python сразу передает функцию в `func`. `@trace(prefix="--")`: сначала вызов
+`trace(prefix="--")` без функции, он возвращает настоящий декоратор, и уже тот получает функцию.
 
 ```python
 import functools
@@ -168,7 +171,7 @@ def a(): ...
 def b(): ...
 ```
 
-## Состояние: счетчик, кэш, ограничение вызовов
+## Декоратор с состоянием: счетчик вызовов, кэш, один запуск
 
 ```python
 import functools
@@ -218,7 +221,7 @@ ping(); ping()
 ping.calls         # 2
 ```
 
-## Декоратор-класс
+## Декоратор в виде класса (__call__)
 
 ```python
 import functools
@@ -241,7 +244,7 @@ def ping(): ...
 
 На методе класса такой декоратор не получит `self`. Для методов - декоратор-функция: `self` придет в `args[0]`.
 
-## Для async-функций
+## Декоратор для async-функций
 
 ```python
 import asyncio
@@ -269,7 +272,7 @@ async def load():
 asyncio.run(load())    # 42
 ```
 
-## Регистрация: декоратор возвращает функцию без обертки
+## Декоратор-регистратор: запоминает функцию, без обертки
 
 ```python
 HANDLERS = {}
@@ -291,7 +294,7 @@ HANDLERS["order_created"](data={})             # вызов по имени со
 
 Так устроены `@app.get("/path")` во FastAPI и `@pytest.fixture`.
 
-## Декоратор класса
+## Декоратор, который применяют к классу
 
 ```python
 def add_repr(cls):
@@ -366,7 +369,7 @@ fib(50)            # 12586269025
 fib.cache_info()   # hits, misses, maxsize, currsize; fib.cache_clear() - сбросить
 ```
 
-## Порядок и замыкания
+## Порядок нескольких декораторов
 
 ```python
 def a(func):
@@ -388,7 +391,11 @@ def f():
 
 
 f()                # 'a(b(f))': при вызове первым срабатывает внешний
+```
 
+## Замыкание в цикле: позднее связывание
+
+```python
 funcs = [lambda: i for i in range(3)]
 [g() for g in funcs]          # [2, 2, 2]: замыкание видит последнее значение i
 funcs = [lambda i=i: i for i in range(3)]

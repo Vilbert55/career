@@ -4,7 +4,7 @@ Python 3.11+. Каждый блок самостоятельный, можно �
 asyncio - один поток, один цикл событий. Пока корутина ждет ввод-вывод на `await`, цикл выполняет другие.
 Ускоряет ожидание (сеть, БД, файлы), вычисления не ускоряет.
 
-## Корутина и запуск
+## Корутина, await и asyncio.run
 
 ```python
 import asyncio
@@ -25,7 +25,7 @@ asyncio.run(main())                                # точка входа: со
 
 `fetch("a", 0.1)` без `await` только создает объект корутины, код не выполняется.
 
-## Параллельно: gather, create_task, TaskGroup
+## Несколько корутин одновременно: gather, create_task, TaskGroup
 
 ```python
 import asyncio
@@ -55,7 +55,7 @@ async def main():
 asyncio.run(main())
 ```
 
-## Ошибки в gather
+## Обработка ошибок в gather
 
 ```python
 import asyncio
@@ -85,7 +85,7 @@ async def main():
 asyncio.run(main())
 ```
 
-## Таймауты
+## Таймауты: timeout и wait_for
 
 ```python
 import asyncio
@@ -133,7 +133,7 @@ async def main():
 asyncio.run(main())
 ```
 
-## По мере готовности: as_completed
+## Результаты по мере готовности: as_completed
 
 ```python
 import asyncio
@@ -153,7 +153,7 @@ async def main():
 asyncio.run(main())
 ```
 
-## Очередь: производитель и обработчики
+## Очередь задач: производитель и обработчики (Queue)
 
 ```python
 import asyncio
@@ -189,7 +189,7 @@ async def main():
 asyncio.run(main())
 ```
 
-## Блокирующий код внутри async
+## Блокирующий код внутри корутины: to_thread
 
 ```python
 import asyncio
@@ -211,7 +211,7 @@ async def main():
 asyncio.run(main())
 ```
 
-## Lock: общий ресурс
+## Общие данные между задачами: Lock
 
 ```python
 import asyncio
@@ -240,7 +240,7 @@ async def main():
 asyncio.run(main())
 ```
 
-## Отмена
+## Отмена задачи: cancel и CancelledError
 
 ```python
 import asyncio
@@ -301,7 +301,7 @@ asyncio.run(main())
 
 Свой класс: `async with` - методы `__aenter__` / `__aexit__`, `async for` - `__aiter__` / `__anext__`.
 
-## Потоки, процессы, asyncio
+## Что выбрать: потоки, процессы или asyncio
 
 | Задача | Чем | Почему |
 | --- | --- | --- |
