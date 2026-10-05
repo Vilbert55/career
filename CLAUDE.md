@@ -74,6 +74,9 @@ Claude коммитит и пушит здесь самостоятельно, �
   параметры `spec_aliases[]`, `skills[]` (Python=446), `locations[]` (c_678 Москва, c_679 СПб)).
 - `tools/analyze.py` — сводка, `tools/check_resume.py` — проверка символов в резюме.
 - Каноничные названия навыков hh — `api.hh.ru/suggests/skill_set?text=...` (анонимно).
+- Рабочая машина: github.com резолвится в fake-IP Clash, SSH на порт 22 не проходит. git pull/push —
+  через порт 443 и прокси: `GIT_SSH_COMMAND='ssh -o HostKeyAlias=github.com -o ProxyCommand="nc -X connect
+  -x 127.0.0.1:7897 ssh.github.com 443"' git pull`. Домашний ПК — обычный SSH.
 - Браузер (claude-in-chrome): Павел залогинен на hh, Хабр Карьере, LinkedIn. Правки на hh —
   по его запросу. Грабли редактора hh: мастер создания публикует резюме сразу; опыт и курсы —
   общие записи профиля, к резюме привязываются галочками; город и языки — в профиле;
