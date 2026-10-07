@@ -10,5 +10,6 @@
 | [decorators.md](decorators.md) | декораторы: шаблон, wraps, с аргументами и с необязательными аргументами, состояние, класс, async, регистрация, встроенные |
 | [context-managers.md](context-managers.md) | контекстные менеджеры: протокол with, класс и @contextmanager, исключения, временная подмена значения, ExitStack, async with, готовые менеджеры, типы |
 | [async.md](async.md) | asyncio: корутины, gather и TaskGroup, таймауты, Semaphore, очередь, to_thread, Lock, отмена, async with/for |
+| [threads-processes.md](threads-processes.md) | потоки и процессы: что выбрать, GIL, ThreadPoolExecutor, Lock и Queue, ProcessPoolExecutor, общая память, API concurrent.futures, частые ошибки |
 | [pytest.md](pytest.md) | pytest: запуск, проверки, parametrize, фикстуры, monkeypatch и mock, async, чек-лист тестов |
 | [pytest-example/](pytest-example/) | пример проекта: код, фикстуры в conftest.py, тесты; pytest.ini, VS Code без ИИ |

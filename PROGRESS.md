@@ -11,6 +11,12 @@
 
 ## Где остановились
 
+### 2026-10-07 — шпаргалка по потокам и процессам
+- `cheatsheets/threads-processes.md`: что выбрать (I/O - потоки/asyncio, CPU - процессы), GIL, ThreadPoolExecutor,
+  Thread/Lock (гонка на счетчике), Queue, ProcessPoolExecutor (pickle, chunksize, __main__, fork/spawn/forkserver),
+  память процессов не общая, API concurrent.futures, частые ошибки. 6 блоков проверены запуском, pyright 0.
+- Микрозадача 05 (ttl_cache): cache_clear сделан Павлом по подсказкам, 6/7; остался ключ кеша (строка вместо кортежа).
+
 ### 2026-10-06 — шпаргалка по контекстным менеджерам
 - `cheatsheets/context-managers.md`: протокол with, класс, @contextmanager с try/finally, исключения
   в __exit__, временная подмена с маркером "не было", ExitStack, async with, готовые менеджеры, типы,
