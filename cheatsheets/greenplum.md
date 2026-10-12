@@ -2,7 +2,7 @@
 
 Greenplum 6 построен на PostgreSQL 9.4, Greenplum 7 - на PostgreSQL 12. В 2024 году Broadcom закрыл исходники
 Greenplum; в России работают Arenadata DB (ADB) и открытый форк Greengage DB. Примеры и планы сняты
-на Greenplum 6.21.3 с 16 сегментами.
+на Greenplum 6.21.3 с 16 сегментами, примеры для Postgres - на PostgreSQL 14.
 
 **Содержание**
 
@@ -13,7 +13,9 @@ Greenplum; в России работают Arenadata DB (ADB) и открыты
 - [Оптимизаторы: ORCA и планировщик Postgres](#оптимизаторы-orca-и-планировщик-postgres)
 - [Хранение: heap, AO, AOCS](#хранение-heap-ao-aocs)
 - [Партиционирование](#партиционирование)
+- [Индексы](#индексы)
 - [Память, ресурсы, конкуренция](#память-ресурсы-конкуренция)
+- [Блокировки](#блокировки)
 - [Сводная таблица отличий](#сводная-таблица-отличий)
 - [Почему запрос медленный: чек-лист](#почему-запрос-медленный-чек-лист)
 
@@ -193,6 +195,61 @@ PARTITION BY RANGE (sale_date)
   Ключ распределения и ключ партиционирования обычно разные.
 - Слишком много партиций раздувает каталог и замедляет планирование.
 
+## Индексы
+
+**Postgres.** Типы:
+
+| Тип | Для чего |
+|---|---|
+| B-tree | по умолчанию: `=`, диапазоны, `ORDER BY`, префикс `LIKE 'abc%'` |
+| Hash | только `=` |
+| GIN | много значений в одной строке: массивы, `jsonb`, полнотекстовый поиск |
+| GiST, SP-GiST | геометрия, диапазоны, поиск ближайших |
+| BRIN | огромные таблицы, где значение следует физическому порядку строк (время вставки) |
+
+Тестовая таблица `orders` на 1 млн строк, индекс `(customer_id, created_at)`:
+
+- Условие на `customer_id` или на обе колонки - индекс работает. `WHERE customer_id = 42 ORDER BY created_at DESC
+  LIMIT 5` идет без сортировки: `Index Scan Backward`. Условие только на `created_at` - `Seq Scan`:
+  в составном индексе важен порядок колонок.
+- Индекс не используется, когда:
+  - над колонкой функция: `lower(email) = ...` - нужен индекс по выражению `ON orders (lower(email))`;
+  - литерал другого типа: `id = 42.0` превращается в `(id)::numeric = 42.0` и дает `Seq Scan`, `id = '42'` работает;
+  - `LIKE 'user42%'` при collation, отличной от C (`en_US.utf8`), - нужен индекс с `text_pattern_ops`;
+    `LIKE '%42'` B-tree не ускоряет совсем;
+  - условие выбирает большую долю строк: `status = 'done'` (99 %) - `Seq Scan`, `status = 'new'` (1 %) - `Index Scan`.
+- Частичный индекс `ON orders (created_at) WHERE status = 'new'` - маленький индекс под частый фильтр по редкому значению.
+- Покрывающий индекс `ON orders (customer_id) INCLUDE (amount)` (PG 11+) дает `Index Only Scan`, таблица
+  не читается. `Heap Fetches` в плане - сколько раз все же пришлось читать таблицу: после `UPDATE` половины строк
+  стало 20 вместо 0, пока `VACUUM` не обновит карту видимости.
+- Условие с `OR` по двум колонкам с индексами - `BitmapOr` из двух `Bitmap Index Scan`.
+- `CREATE INDEX` берет `ShareLock`: чтение идет, запись ждет конца построения. `CREATE INDEX CONCURRENTLY`
+  запись не блокирует, строит дольше и не запускается внутри транзакции.
+- Каждый индекс замедляет `INSERT` и `UPDATE` и занимает место: 9 индексов на тестовой таблице - 329 МБ
+  при таблице 121 МБ. Неиспользуемые находят по `pg_stat_user_indexes.idx_scan = 0`.
+
+**Greenplum 6.** Индекс строится на каждом сегменте по его части строк. Greenplum рассчитан на параллельное
+полное чтение, индексы нужны для точечных запросов и выборки малой доли строк из большой таблицы.
+
+- Есть B-tree, bitmap, GiST, GIN, SP-GiST. Hash - `ERROR: hash indexes are not supported`, BRIN нет (он с PG 9.5).
+- `CREATE INDEX CONCURRENTLY` не поддерживается.
+- Уникальный индекс обязан содержать ключ распределения.
+- Индексы на AO и AOCS работают; в плане `Bitmap Heap Scan`. На heap ORCA выбирает `Index Scan`.
+- Равенство по ключу распределения отправляет запрос на один сегмент: `Gather Motion 1:1  (slice1; segments: 1)`.
+- ORCA в 6.21 не использует индексы по выражению и частичные индексы - в плане `Seq Scan`. Legacy индекс
+  по выражению использует.
+- `CREATE INDEX` на партиционированной таблице создает индекс на каждой партиции (12 из 12).
+- Индексы замедляют загрузку: 1 млн строк в AO без индексов - 0,3 с, с тремя индексами - 1,1 с. Перед большой
+  загрузкой индексы удаляют и создают заново после нее.
+- **Bitmap-индекс** - для колонок с несколькими значениями. Размер на 1 млн строк:
+
+| Различных значений | bitmap | B-tree |
+|---|---|---|
+| 2 | 2 МБ | 23 МБ |
+| 1 000 | 502 МБ | 23 МБ |
+| 100 000 | 6,5 ГБ | 23 МБ |
+| 1 000 000 | 486 МБ | 23 МБ |
+
 ## Память, ресурсы, конкуренция
 
 - Каждый запрос запускает процессы на всех сегментах для каждого slice. Тысячи мелких запросов - плохо
@@ -204,12 +261,78 @@ PARTITION BY RANGE (sale_date)
   `Sort Method:  external merge  Disk: 31744kB`, у `HashAggregate` - `62333 groups total in 32 batches; ... spill groups`,
   в сноске - `* (slice1) ... Work_mem: 2916K bytes max, 6353K bytes wanted`. При общей нехватке памяти
   на сегменте срабатывает защита и отменяет самый крупный запрос, необязательно виновника.
-- `UPDATE` и `DELETE` в AO-таблице всегда берут `ExclusiveLock` на всю таблицу: параллельные изменения одной
-  таблицы идут по очереди. В heap-таблице так же, если выключен глобальный детектор взаимоблокировок
-  `gp_enable_global_deadlock_detector` (в GP6 по умолчанию выключен). С включенным heap блокируется
-  построчно (`RowExclusiveLock`), как в Postgres.
 - Autovacuum для пользовательских таблиц в GP6 не работает: `VACUUM` и `ANALYZE` запускают по регламенту.
   Без этого раздуваются таблицы и системный каталог.
+
+## Блокировки
+
+**Postgres.** MVCC: чтение не ждет запись, запись не ждет чтение. `SELECT` строки, которую меняет чужая
+незавершенная транзакция, сразу отдает старую версию.
+
+- Запись ждет запись: второй `UPDATE` той же строки ждет коммита или отката первой транзакции, затем применяется
+  к новой версии строки (Read Committed). `UPDATE` другой строки не ждет.
+- Блокировки таблицы, которые берут команды:
+
+| Команда | Режим | Кого блокирует |
+|---|---|---|
+| `SELECT` | `AccessShareLock` | только `AccessExclusive`: `ALTER`, `DROP`, `TRUNCATE`, `VACUUM FULL` |
+| `SELECT ... FOR UPDATE` | `RowShareLock` | на таблице - только DDL; выбранные строки - как `UPDATE` |
+| `INSERT`, `UPDATE`, `DELETE` | `RowExclusiveLock` | `CREATE INDEX` и DDL |
+| `ANALYZE`, `VACUUM` | `ShareUpdateExclusiveLock` | друг друга, `CREATE INDEX` и DDL |
+| `CREATE INDEX` | `ShareLock` | запись в таблицу |
+| `ALTER TABLE`, `TRUNCATE`, `DROP` | `AccessExclusiveLock` | всех, включая чтение |
+
+- **Очередь блокировок.** `ALTER TABLE` ждет конца долгого `SELECT`, и все новые запросы к таблице встают
+  в очередь за `ALTER`. В тесте `SELECT` одной строки ждал 3,6 с. Для миграций - `SET lock_timeout = '1s'` и повтор:
+  `ALTER` падает с `canceling statement due to lock timeout`, остальные запросы идут.
+- **Взаимоблокировка** - две транзакции меняют строки 10 и 20 в разном порядке. Через `deadlock_timeout` (1 с)
+  одна получает `ERROR: deadlock detected`. Лечение - менять строки в одном порядке и повторять транзакцию.
+- **Очередь задач на таблице.** `SELECT id FROM orders WHERE status = 'new' ORDER BY id LIMIT 3 FOR UPDATE SKIP LOCKED`
+  (PG 9.5+): каждый обработчик получает свои строки, первый - 100, 200, 300, второй - 400, 500, 600.
+  Без `SKIP LOCKED` второй ждет. С `NOWAIT` - сразу `ERROR: could not obtain lock on row`.
+- Кто кого держит (PG 9.6+):
+
+```sql
+SELECT pid, wait_event_type, wait_event, pg_blocking_pids(pid) AS blocked_by, query
+FROM pg_stat_activity
+WHERE wait_event_type = 'Lock';
+-- ожидание строки: wait_event = transactionid; таблицы: wait_event = relation
+```
+
+- `pg_cancel_backend(pid)` отменяет запрос, `pg_terminate_backend(pid)` закрывает сессию.
+
+**Greenplum 6.** Блокировки берутся на мастере и на сегментах. `pg_locks` показывает все, колонка
+`gp_segment_id` (-1 - мастер). Главное отличие - блокировки всей таблицы там, где Postgres блокирует строку:
+
+| Команда | Блокировка | Следствие |
+|---|---|---|
+| `UPDATE`, `DELETE` в heap | `RowExclusiveLock` при включенном `gp_enable_global_deadlock_detector` | разные строки меняются параллельно; без детектора (по умолчанию в GP6 выключен) - `ExclusiveLock` на всю таблицу |
+| `UPDATE`, `DELETE` в AO, AOCS | `ExclusiveLock` на мастере | ждут все изменения таблицы, включая `INSERT`; чтение идет |
+| `SELECT ... FOR UPDATE` | `ExclusiveLock` на мастере | ждут `UPDATE` и `FOR UPDATE` любых строк таблицы |
+| `INSERT` | `RowExclusiveLock` | параллельные `INSERT` не ждут друг друга, в AO тоже |
+
+- **Одновременный `UPDATE` одной строки под ORCA падает.** ORCA строит `UPDATE` как удаление плюс вставку
+  (узел `Split` в плане). Вторая транзакция ждет первую, затем получает
+  `ERROR: tuple to be updated was already moved to another segment due to concurrent update`. С `optimizer = off`
+  она дожидается и применяет изменение поверх, как в Postgres. Код, который правит одни и те же строки,
+  должен повторять транзакцию.
+- `SKIP LOCKED` нет (синтаксис PG 9.5). `NOWAIT` не помогает: `FOR UPDATE` сначала ждет блокировку таблицы.
+- Взаимоблокировку на одном сегменте снимает обычный детектор за `deadlock_timeout` (1 с). Между сегментами -
+  глобальный детектор, он проверяет раз в `gp_global_deadlock_detector_period` (2 мин). В тесте снял через 98 с:
+  `canceling statement due to user request: "cancelled by global deadlock detector"`.
+- `pg_blocking_pids` нет. На мастере `pg_stat_activity.waiting = t` и `waiting_reason = lock` видны только
+  для ожидания на мастере (блокировка таблицы). Ожидание строки идет на сегменте: на мастере `waiting = f`, найти его можно
+  только в `pg_locks`:
+
+```sql
+SELECT locktype, mode, gp_segment_id, pid, mppsessionid FROM pg_locks WHERE NOT granted;
+-- transactionid | ShareLock | 4 | ...  - ждет строку на сегменте 4
+
+SELECT lorpid, lormode, lorgranted, lorcurrentquery          -- держатель и ожидающий с текстом запроса
+FROM gp_toolkit.gp_locks_on_relation WHERE lorrelname = 'orders';
+```
+
+- `lock_timeout` работает, ошибка приходит с сегмента: `canceling statement due to lock timeout (seg4 ...)`.
 
 ## Сводная таблица отличий
 
@@ -238,3 +361,4 @@ PARTITION BY RANGE (sale_date)
 6. Партиции: отсекаются ли (`Partitions selected` / `Partitions scanned`).
 7. Раздутие: давно не было `VACUUM`, много скрытых строк в AO.
 8. Очередь: запрос ждет слота в ресурсной очереди, а не выполняется (`pg_stat_activity`, `gp_toolkit.gp_resqueue_status`).
+9. Блокировка: запрос ждет чужую транзакцию (`pg_locks WHERE NOT granted`, `gp_toolkit.gp_locks_on_relation`).
