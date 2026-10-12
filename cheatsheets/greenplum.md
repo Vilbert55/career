@@ -158,11 +158,11 @@ EXPLAIN SELECT o.id, c.name FROM orders o JOIN customers c ON o.customer_id = c.
 
 ## Хранение: heap, AO, AOCS
 
-| Тип | Как задать | Когда |
-|---|---|---|
-| heap | по умолчанию | частые `UPDATE`/`DELETE`, небольшие таблицы, как в Postgres |
-| AO, append-optimized | `WITH (appendoptimized=true)` | пакетная загрузка и чтение; сжатие; изменение строк дорогое |
-| AOCS, колоночное | `WITH (appendoptimized=true, orientation=column)` | широкие таблицы, запросы читают несколько колонок; лучшее сжатие |
+| Тип | Как устроено | Как задать | Когда |
+|---|---|---|---|
+| heap | строки целиком лежат в страницах, у каждой версии строки свои `xmin`/`xmax` (MVCC); `UPDATE` пишет новую версию, старую убирает `VACUUM` | по умолчанию | частые `UPDATE`/`DELETE`, небольшие таблицы, как в Postgres |
+| AO, append-optimized | строки дописываются блоками в конец файлов, блоки можно сжимать; у строк нет `xmin`/`xmax`, удаленные отмечаются в отдельной карте видимости (visimap); `UPDATE` - отметка плюс новая строка в конце | `WITH (appendoptimized=true)` | пакетная загрузка и чтение; сжатие; изменение строк дорогое |
+| AOCS, колоночное | как AO, но каждая колонка в своем файле со своим сжатием; запрос читает файлы только нужных колонок и собирает строку по ее номеру | `WITH (appendoptimized=true, orientation=column)` | широкие таблицы, запросы читают несколько колонок; лучшее сжатие |
 
 ```sql
 CREATE TABLE fact_sales (id bigint, sale_date date, store_id int, amount numeric)
