@@ -235,6 +235,21 @@ PARTITION BY RANGE (sale_date)
 
 ## Блокировки
 
+Режимы блокировки таблицы, от слабого к сильному. Одинаковы в Postgres и Greenplum:
+
+| Режим | Кто берет | С чем конфликтует |
+|---|---|---|
+| `AccessShareLock` | `SELECT` | `AccessExclusive` |
+| `RowShareLock` | `SELECT ... FOR UPDATE / FOR SHARE` | `Exclusive`, `AccessExclusive` |
+| `RowExclusiveLock` | `INSERT`, `UPDATE`, `DELETE` | `Share`, `ShareRowExclusive`, `Exclusive`, `AccessExclusive` |
+| `ShareUpdateExclusiveLock` | `VACUUM`, `ANALYZE`, `CREATE INDEX CONCURRENTLY` | `ShareUpdateExclusive` и все сильнее |
+| `ShareLock` | `CREATE INDEX` | `RowExclusive`, `ShareUpdateExclusive`, `ShareRowExclusive` и сильнее: стоит запись |
+| `ShareRowExclusiveLock` | `CREATE TRIGGER`, добавление внешнего ключа | все, кроме `AccessShare` и `RowShare` |
+| `ExclusiveLock` | `REFRESH MATERIALIZED VIEW CONCURRENTLY`; в Greenplum - `UPDATE`/`DELETE` в AO, `SELECT ... FOR UPDATE` | все, кроме `AccessShare`: идет только чтение |
+| `AccessExclusiveLock` | `ALTER TABLE`, `DROP`, `TRUNCATE`, `VACUUM FULL`, `LOCK TABLE` | все, включая `SELECT` |
+
+Что отличается по командам:
+
 | Команда | Postgres | Greenplum 6 |
 |---|---|---|
 | `SELECT` | `AccessShareLock`, запись не ждет | так же |
