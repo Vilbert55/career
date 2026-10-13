@@ -64,7 +64,7 @@
 | День | Тема |
 |---|---|
 | пн 12.10 | Greenplum против Postgres: шпаргалка `cheatsheets/greenplum.md`, проговорить вслух |
-| вт 13.10 | SQL: чтение EXPLAIN в Postgres и Greenplum, индексы, изоляция и блокировки, пара задач на оконные функции |
+| вт 13.10 | SQL: шпаргалка `cheatsheets/sql.md`, задачи [sql-tasks.md](sql-tasks.md) (решать дома, разбор - следующим шагом), изоляция транзакций |
 | ср 14.10 | SQLAlchemy 2.0: шпаргалка и мини-практика (модели, связи, N+1, async, транзакции) |
 | чт 15.10 | Docker и Kubernetes |
 | пт 16.10 | REST API, микросервисы, Kafka и Redis коротко |
