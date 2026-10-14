@@ -6,6 +6,7 @@ SQLAlchemy 2.0, Python 3.11+. Блоки 1-5 - один скрипт, выпол
 **Содержание**
 
 - [Что есть что](#что-есть-что)
+- [Что изменилось после 1.x](#что-изменилось-после-1x)
 - [1. Модели](#1-модели)
 - [2. Сессия и транзакции](#2-сессия-и-транзакции)
 - [3. Запросы](#3-запросы)
@@ -28,6 +29,24 @@ SQLAlchemy 2.0, Python 3.11+. Блоки 1-5 - один скрипт, выпол
 
 Пул по умолчанию: `pool_size=5` постоянных соединений и `max_overflow=10` сверх них. `pool_pre_ping=True` проверяет
 соединение перед выдачей, чтобы не получить оборванное после рестарта БД.
+
+## Что изменилось после 1.x
+
+Версия 1.4 - переходная: новый стиль уже есть, старый работает с предупреждениями. В 2.0 старое удалено или
+объявлено устаревшим.
+
+| Было в 1.x | Стало в 2.0 |
+|---|---|
+| `session.query(Client).filter(Client.id == 1).first()` | `session.scalars(select(Client).where(Client.id == 1)).first()` |
+| `session.query(Client).get(1)` | `session.get(Client, 1)` |
+| `Base = declarative_base()` | `class Base(DeclarativeBase): pass` |
+| `id = Column(Integer, primary_key=True)` | `id: Mapped[int] = mapped_column(primary_key=True)` |
+| `engine.execute(...)`, автокоммит | удалены: `with engine.begin() as conn: conn.execute(...)` |
+| строка SQL в `execute("SELECT ...")` | только через `text("SELECT ...")` |
+| async нет | `create_async_engine`, `AsyncSession` (с 1.4) |
+| `joinedload` по списку, затем `.all()` | перед `.all()` нужен `.unique()` |
+
+`session.query()` в 2.0 работает, но считается старым API.
 
 ## 1. Модели
 

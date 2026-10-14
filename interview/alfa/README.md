@@ -32,7 +32,7 @@
 | Python 3 от 3 лет | ЦС, Techboss, Практикум | закрыто |
 | SQL, оптимизация, план запроса | Metaload: SQL-API на PostgreSQL; BDP-5494 5322 → 38 мс; разборы планов на проде | сильная сторона |
 | Greenplum и отличия от Postgres | 3,5 года на Greenplum 6: распределение, перекос, motion, ORCA, AO/AOCS, ресурсные очереди, инциденты прода | сильная сторона, главный козырь |
-| SQLAlchemy | Techboss; диплом Практикума: async, AsyncSession, select(), Alembic; на работе почти нет | освежить: стиль 2.0 (Mapped, mapped_column), загрузка связей, N+1, транзакции |
+| SQLAlchemy | плотно на прошлой работе до ЦС (версия 1.x, ~3,5 года назад); диплом Практикума: async, AsyncSession, select(), Alembic; в ЦС почти нет | освежить: стиль 2.0 (Mapped, mapped_column), загрузка связей, N+1, транзакции |
 | Docker | Dockerfile в DPS и Infra Service, docker-compose в Практикуме | освежить принципы: слои, multi-stage, кеш сборки, непривилегированный пользователь |
 | Kubernetes | практического опыта нет | главный пробел: понятия и словарь (Pod, Deployment, Service, Ingress, ConfigMap/Secret, probes, ресурсы) |
 | REST API | DPS и Infra Service на FastAPI | освежить: методы и идемпотентность, коды ответов, пагинация, версии, ошибки |
@@ -66,11 +66,19 @@
 | пн 12.10 | Greenplum против Postgres: шпаргалка `cheatsheets/greenplum.md`, проговорить вслух |
 | вт 13.10 | SQL: шпаргалка `cheatsheets/sql.md`, задачи [sql-tasks.md](sql-tasks.md) (решать дома, разбор - следующим шагом), изоляция транзакций |
 | ср 14.10 | SQLAlchemy 2.0: шпаргалка `cheatsheets/sqlalchemy.md`, мини-практика (модели, связи, N+1, async, транзакции) |
-| чт 15.10 | Docker и Kubernetes |
+| чт 15.10 | Docker и Kubernetes: `cheatsheets/docker.md`, `cheatsheets/kubernetes.md` (написаны 14.10) |
 | пт 16.10 | REST API, микросервисы, Kafka и Redis коротко |
 | сб 17.10 | рассказ о себе и истории; пробное интервью 1 (60-90 минут) |
 | вс 18.10 | добор слабых мест; пробное интервью 2 (30-40 минут) |
 | пн 19.10 | утром - пролистать шпаргалки, проверить связь и камеру; 11:00 интервью |
+
+## Как подать опыт
+
+- SQLAlchemy: "плотно работал с 1.x, новый стиль 2.0 знаю - `select()` вместо `query()`, `Mapped` вместо `Column`,
+  async через `AsyncSession`". Таблица отличий - `cheatsheets/sqlalchemy.md`.
+- Kubernetes: сказать прямо, что в проде с ним не работал. Контейнеры - Docker и docker compose (DPS, Infra Service).
+  Дальше показать понимание на примере сервиса: Deployment и Service, пробы, requests и limits, rolling update,
+  остановка по `SIGTERM`.
 
 ## Вопросы на интервью
 
