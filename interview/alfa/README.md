@@ -76,7 +76,7 @@
 
 - SQLAlchemy: "плотно работал с 1.x, новый стиль 2.0 знаю - `select()` вместо `query()`, `Mapped` вместо `Column`,
   async через `AsyncSession`". Таблица отличий - `cheatsheets/sqlalchemy.md`.
-- Kubernetes: сказать прямо, что в проде с ним не работал. Контейнеры - Docker и docker compose (DPS, Infra Service).
+- Kubernetes: сказать прямо, что в проде с ним не работал. Контейнеры: Dockerfile в DPS и Infra Service, docker compose в дипломе Практикума.
   Дальше показать понимание на примере сервиса: Deployment и Service, пробы, requests и limits, rolling update,
   остановка по `SIGTERM`.
 
