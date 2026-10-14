@@ -155,48 +155,79 @@ with SessionLocal() as session:
 
 ## 4. Связи и N+1
 
-```python
-from sqlalchemy import event
-from sqlalchemy.orm import joinedload, selectinload
+**Что такое N+1.** Получили список клиентов одним запросом и в цикле обращаемся к `client.accounts`. Счета
+не загружены, и SQLAlchemy на каждое обращение делает отдельный запрос. Итого 1 запрос за список и еще N за связями:
+на 1000 клиентов - 1001 запрос.
 
-queries = []
-event.listen(engine, "before_cursor_execute", lambda *args: queries.append(args[2]))   # счетчик запросов
+```python
+from sqlalchemy.orm import joinedload, raiseload, selectinload
+
+engine.echo = True                                       # печатать SQL - видно каждый запрос
 
 with SessionLocal() as session:
     session.add(Client(name="Вера", accounts=[Account(balance=700)]))
     session.commit()
 
+# Плохо: 1 + N запросов
 with SessionLocal() as session:
-    queries.clear()
-    for c in session.scalars(select(Client)).all():            # 1 запрос: клиенты
-        print(c.name, len(c.accounts))                         # + 1 запрос на каждого клиента
-    print("лениво:", len(queries))                             # 3 = 1 + N, N = 2 клиента
-
-with SessionLocal() as session:
-    queries.clear()
-    for c in session.scalars(select(Client).options(selectinload(Client.accounts))).all():
-        print(c.name, len(c.accounts))
-    print("selectinload:", len(queries))                       # 2: клиенты + все счета через IN (...)
-
-with SessionLocal() as session:
-    queries.clear()
-    accounts = session.scalars(select(Account).options(joinedload(Account.client))).all()
-    print([a.client.name for a in accounts])
-    print("joinedload:", len(queries))                         # 1: счета JOIN клиенты
+    clients = session.scalars(select(Client)).all()           # SELECT ... FROM clients
+    for c in clients:
+        print(c.name, len(c.accounts))                        # SELECT ... FROM accounts WHERE ? = accounts.client_id
+                                                              # - для каждого клиента заново
 ```
 
-N+1 - один запрос за списком и еще по запросу на каждый элемент, когда код обращается к его связи.
-На 1000 клиентов это 1001 запрос. Лечится явной загрузкой связей в исходном запросе:
+**Что делать: сразу сказать в запросе, какие связи понадобятся.**
 
-| Способ | Как грузит | Когда |
-|---|---|---|
-| `lazy="select"` - по умолчанию | отдельный запрос при первом обращении к связи | N+1 в цикле |
-| `selectinload` | второй запрос `WHERE client_id IN (...)` | коллекции, один-ко-многим - основной выбор |
-| `joinedload` | `LEFT OUTER JOIN` в том же запросе | многие-к-одному (`account.client`). Для коллекций строки размножаются, нужен `.unique()` |
-| `raiseload` / `lazy="raise"` | ошибка при попытке ленивой загрузки | найти N+1 в тестах; в async ленивой загрузки все равно нет |
+```python
+# Список связанных объектов (client.accounts) - selectinload: 2 запроса при любом числе клиентов
+with SessionLocal() as session:
+    clients = session.scalars(select(Client).options(selectinload(Client.accounts))).all()
+    # SELECT ... FROM clients
+    # SELECT ... FROM accounts WHERE accounts.client_id IN (1, 2)
+    for c in clients:
+        print(c.name, len(c.accounts))                        # без запросов: счета уже загружены
 
-- Увидеть все запросы: `create_engine(..., echo=True)`.
-- Способ задают в запросе через `.options(...)` или по умолчанию в модели: `relationship(lazy="selectin")`.
+# Один связанный объект (account.client) - joinedload: 1 запрос
+with SessionLocal() as session:
+    accounts = session.scalars(select(Account).options(joinedload(Account.client))).all()
+    # SELECT ... FROM accounts LEFT OUTER JOIN clients ON clients.id = accounts.client_id
+    print([a.client.name for a in accounts])
+
+# Объекты не нужны, нужны только цифры - посчитать в SQL: 1 запрос
+with SessionLocal() as session:
+    rows = session.execute(
+        select(Client.name, func.count(Account.id)).join(Client.accounts).group_by(Client.name)
+    ).all()
+    print(rows)                                               # [('Анна', 2), ('Вера', 1)]
+
+engine.echo = False
+```
+
+| Что нужно | Чем грузить |
+|---|---|
+| список: `client.accounts` | `selectinload` |
+| один объект: `account.client` | `joinedload` |
+| только количество или сумма | `func.count`, `func.sum` в самом запросе |
+
+**Как не допустить N+1.** Запретить ленивую загрузку: обращение к незагруженной связи сразу дает ошибку,
+и N+1 ловится в тестах, а не на проде.
+
+```python
+with SessionLocal() as session:
+    client = session.scalars(select(Client).options(raiseload(Client.accounts))).first()
+    try:
+        client.accounts
+    except Exception as e:
+        print(e)                                              # 'Client.accounts' is not available due to lazy='raise'
+```
+
+- Запрет для всей модели: `relationship(lazy="raise")`. Тогда каждый запрос явно говорит, какие связи грузить.
+- Загрузку по умолчанию можно поменять в модели: `relationship(lazy="selectin")`. Удобно, но счета будут грузиться
+  и там, где они не нужны.
+- `joinedload` для списка тоже работает, но строки клиента размножаются по числу счетов, и нужен `.unique()`
+  перед `.all()`. Для списков проще `selectinload`.
+- В async ленивой загрузки нет вообще: незагруженная связь сразу дает `MissingGreenlet`. Там `selectinload`
+  обязателен.
 
 ## 5. Core: text, массовая вставка
 
