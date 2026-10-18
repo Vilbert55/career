@@ -15,6 +15,18 @@
 
 ## Где остановились
 
+### 2026-10-18 — Kubernetes руками: minikube на домашнем ноутбуке
+- Поставлены `kubectl` v1.37.1 и `minikube` v1.39.0 в `~/.local/bin` (суммы сверены), кластер с metrics-server.
+  Из кластера внешний реестр недоступен (прокси Clash 127.0.0.1 внутри контейнера не виден) - образы собираются
+  локально и грузятся `minikube image load`.
+- `~/k8s-lab` (вне репозитория): сервис `payments` на stdlib (версия и имя пода, `/health`, нагрузка CPU),
+  манифесты configmap/secret/deployment/service/hpa и 8 упражнений в README. Проверено: балансировка по 3 подам,
+  SIGTERM при удалении пода, rolling update и откат, застревание при сломанной readiness, ImagePullBackOff,
+  HPA 3 -> 6 под нагрузкой.
+- `cheatsheets/kubernetes.md`: разделы HPA и minikube, `stringData` у Secret. Манифесты шпаргалки теперь
+  проверены на живом кластере.
+- Павел смотрит обучающие видео по k8s; интервью в Альфе завтра, 19.10 в 11:00.
+
 ### 2026-10-14 — Альфа-Банк: день 3, SQLAlchemy
 - `cheatsheets/sql.md`: изоляция переписана проще, пять аномалий на одном примере списания со счета.
 - `cheatsheets/sqlalchemy.md`: модели 2.0, сессия, запросы, N+1 (счетчик запросов 3/2/1), Core, async (`MissingGreenlet`),

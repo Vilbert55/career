@@ -11,10 +11,12 @@
 - [Сервис payments в манифестах](#сервис-payments-в-манифестах)
 - [Пробы](#пробы)
 - [Ресурсы](#ресурсы)
+- [Автомасштабирование (HPA)](#автомасштабирование-hpa)
 - [Обновление, откат, остановка пода](#обновление-откат-остановка-пода)
 - [kubectl](#kubectl)
 - [Что сломалось: статусы пода](#что-сломалось-статусы-пода)
 - [Helm и OpenShift](#helm-и-openshift)
+- [Локальный кластер: minikube](#локальный-кластер-minikube)
 
 ## Зачем Kubernetes
 
@@ -50,7 +52,7 @@ Docker запускает контейнеры на одной машине. Kub
 | **Service** | постоянное имя и IP перед группой подов, балансирует запросы между ними | имя сервиса в compose |
 | **Ingress** | вход HTTP снаружи кластера: домен и путь ведут на Service | nginx перед сервисами |
 | **ConfigMap** | настройки - в переменные окружения или файлы | `environment` в compose |
-| **Secret** | пароли и токены. В base64, это кодирование, шифрованием оно не является | - |
+| **Secret** | пароли и токены. В base64, это кодирование, шифрованием оно не является. В манифесте удобнее `stringData:` - открытым текстом, base64 Kubernetes сделает сам | - |
 | **Namespace** | папка для объектов: команда, контур | - |
 | StatefulSet | поды с постоянными именами и своими дисками: базы, Kafka | - |
 | DaemonSet | по поду на каждом узле: сбор логов, мониторинг | - |
@@ -156,6 +158,34 @@ spec:
 - Requests не указаны - под может попасть на перегруженный узел. Нет лимита памяти - утечка в одном поде
   отнимает память у соседей по узлу.
 
+## Автомасштабирование (HPA)
+
+```yaml
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: payments
+spec:
+  scaleTargetRef:                # кого масштабировать
+    apiVersion: apps/v1
+    kind: Deployment
+    name: payments
+  minReplicas: 3
+  maxReplicas: 6
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 50 # средний CPU около 50% от requests
+```
+
+- Процент считается от `requests`: без `requests.cpu` HPA не работает (`<unknown>` в `kubectl get hpa`).
+- Нужен metrics-server: он собирает CPU и память подов (`kubectl top pods`).
+- Вверх масштабирует за ~1 минуту, вниз - через 5 минут спокойной нагрузки.
+- `replicas` в Deployment при работающем HPA не важен, `kubectl scale` HPA перебьет.
+
 ## Обновление, откат, остановка пода
 
 **Обновление (RollingUpdate).** Новый тег в манифесте и `kubectl apply`:
@@ -216,3 +246,18 @@ kubectl top pods                              # потребление CPU и п
   `Ingress`, встроенная сборка образов, строже безопасность. Главное отличие для разработчика: контейнер
   запускается под случайным UID. Образ должен работать под любым пользователем, поэтому файлы приложения отдают
   группе 0: `chgrp -R 0 /app && chmod -R g=u /app`.
+
+## Локальный кластер: minikube
+
+```bash
+minikube start --driver=docker --addons=metrics-server   # кластер из одного узла в Docker-контейнере
+minikube image load payments:1.0     # локальный образ в кластер, без реестра
+kubectl apply -f k8s/                # вся папка манифестов; имена файлов любые, тип задает kind:
+minikube dashboard                   # веб-интерфейс
+minikube service payments            # открыть Service в браузере
+minikube stop                        # остановить; minikube delete - удалить
+```
+
+Образ из `minikube image load` с тегом не `latest`: иначе по умолчанию `imagePullPolicy: Always`, и кластер
+пойдет за ним в Docker Hub.
+
