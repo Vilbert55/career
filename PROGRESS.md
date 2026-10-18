@@ -22,6 +22,8 @@
   SQLAlchemy, REST, микросервисы, брокеры и кеш, Docker, Kubernetes. Было: ООП, SOLID, паттерны, Python, REST, микросервисы и брокеры,
   SQL/SQLAlchemy/Greenplum, Docker и Kubernetes, тесты/Git/безопасность/HTTP, вопросы интервьюеру -
   https://docs.google.com/document/d/1t0kDwN0M0RPcQTcrcU0oYEHhz1uQH7191OZUk00RHM0/edit
+- Правки по просьбе Павла: Python-ловушки заменены на асинхронный Python, коды HTTP - на принципы REST, Docker - на
+  принципы контейнеризации, микросервисы - по урокам Практикума (паттерны по классам, каждый с новой строки). 5 листов.
 - Дальше: пробное интервью вопросами по вакансии.
 
 ### 2026-10-18 — Kubernetes руками: minikube на домашнем ноутбуке
