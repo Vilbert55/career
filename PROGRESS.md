@@ -15,6 +15,13 @@
 
 ## Где остановились
 
+### 2026-10-18 — шпаргалка A4 и пробное интервью перед Альфой
+- Павел решил не углубляться в Kubernetes (роль backend, нужны концепции): minikube, kubectl, образы и `~/k8s-lab` удалены.
+- Шпаргалка на печать в Google Docs, 3 листа A4, 11pt: ООП, SOLID, паттерны, Python, REST, микросервисы и брокеры,
+  SQL/SQLAlchemy/Greenplum, Docker и Kubernetes, тесты/Git/безопасность/HTTP, вопросы интервьюеру -
+  https://docs.google.com/document/d/1t0kDwN0M0RPcQTcrcU0oYEHhz1uQH7191OZUk00RHM0/edit
+- Дальше: пробное интервью вопросами по вакансии.
+
 ### 2026-10-18 — Kubernetes руками: minikube на домашнем ноутбуке
 - Поставлены `kubectl` v1.37.1 и `minikube` v1.39.0 в `~/.local/bin` (суммы сверены), кластер с metrics-server.
   Из кластера внешний реестр недоступен (прокси Clash 127.0.0.1 внутри контейнера не виден) - образы собираются
