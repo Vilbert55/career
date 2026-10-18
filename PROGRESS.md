@@ -17,7 +17,9 @@
 
 ### 2026-10-18 — шпаргалка A4 и пробное интервью перед Альфой
 - Павел решил не углубляться в Kubernetes (роль backend, нужны концепции): minikube, kubectl, образы и `~/k8s-lab` удалены.
-- Шпаргалка на печать в Google Docs, 3 листа A4, 11pt: ООП, SOLID, паттерны, Python, REST, микросервисы и брокеры,
+- Шпаргалка на печать в Google Docs, 4 листа A4, 11pt, 14 блоков в рамках (блок не разрывается между листами,
+  чтобы вырезать карточки): ООП, SOLID, паттерны, Python (понятия и ловушки), SQL (теория и ловушки), Greenplum,
+  SQLAlchemy, REST, микросервисы, брокеры и кеш, Docker, Kubernetes. Было: ООП, SOLID, паттерны, Python, REST, микросервисы и брокеры,
   SQL/SQLAlchemy/Greenplum, Docker и Kubernetes, тесты/Git/безопасность/HTTP, вопросы интервьюеру -
   https://docs.google.com/document/d/1t0kDwN0M0RPcQTcrcU0oYEHhz1uQH7191OZUk00RHM0/edit
 - Дальше: пробное интервью вопросами по вакансии.
